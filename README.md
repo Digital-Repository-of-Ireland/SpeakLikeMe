@@ -29,3 +29,5 @@ Royal Irish Academy [Depositor]. Laethanta na seachtaine.The days of the week. D
 Royal Irish Academy [Depositor]. Laethanta na seachtaine.The days of the week. Dr Wilhelm Doegen. (1931-09-25). Sound [Type]. Digital Repository of Ireland (2022) [Publisher]. https://doi.org/10.7486/DRI.2z119c690
 
 Royal Irish Academy [Depositor]. Uimhreacha.Numbers. Dr Wilhelm Doegen. (1928-09-05). Sound [Type]. Digital Repository of Ireland (2022) [Publisher]. https://doi.org/10.7486/DRI.ww72r097k
+
+Royal Irish Academy [Depositor]. Paidir an Tiarna; an tÁivé Máiria.The Lord's prayer; the Ave Maria. Dr Wilhelm Doegen. (1928-09-13). Sound [Type]. Digital Repository of Ireland (2022) [Publisher]. https://doi.org/10.7486/DRI.d7926464h (Accessed: 2026/05/26)
