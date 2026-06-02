@@ -14,6 +14,7 @@
   line-height: 1.3; 
 }
 
+
 p {
   font-size: 14px;  /* smaller text than default */
   line-height: 1.3; 
@@ -69,7 +70,7 @@ tw-passage[tags~="start"] {
   background-image: url("https://repository.dri.ie/objects/1v540035x/files/1z410w19m/download?type=surrogate");
   background-size: 100% auto;    /* stretch width to full viewport, keep aspect ratio */
   background-position: top center; /* align top of image */
-  background-repeat: repeat;   /* don’t tile */
+  background-repeat: no-repeat;   /* don’t tile */
   background-color: white;        /* fills any extra space below the image */
   padding: 1.5em;                     /* internal text padding */
   border-radius: 10px;                /* slightly rounded corners */
@@ -79,10 +80,10 @@ tw-passage[tags~="start"] {
 tw-passage[tags~="days"] {
   position: relative;
   min-height: 100vh;            /* ensures passage takes full viewport height */
-  background-image: url("https://repository.dri.ie/objects/fq97nq29c/files/ft84pm13q/download?type=surrogate");
+  background-image: url("https://repository.dri.ie/objects/98818k87k/files/9p29d523j/download?type=surrogate");
   background-size: 100% auto;    /* stretch width to full viewport, keep aspect ratio */
   background-position: top center; /* align top of image */
-  background-repeat: repeat;   /* don’t tile */
+  background-repeat: no-repeat;   /* don’t tile */
   background-color: white;        /* fills any extra space below the image */
   padding: 1.5em;                     /* internal text padding */
   border-radius: 10px;                /* slightly rounded corners */
@@ -92,10 +93,10 @@ tw-passage[tags~="days"] {
 tw-passage[tags~="counting"] {
   position: relative;
   min-height: 100vh;            /* ensures passage takes full viewport height */
-  background-image: url("https://repository.dri.ie/objects/vx02dv70x/files/w376gn38x/download?type=surrogate");
+  background-image: url("https://repository.dri.ie/objects/ww72rd220/files/x346t590q/download?type=surrogate");
   background-size: 100% auto;    /* stretch width to full viewport, keep aspect ratio */
   background-position: top center; /* align top of image */
-  background-repeat: repeat;   /* don’t tile */
+  background-repeat: no-repeat;   /* don’t tile */
   background-color: white;        /* fills any extra space below the image */
   padding: 1.5em;                     /* internal text padding */
   border-radius: 10px;                /* slightly rounded corners */
@@ -108,7 +109,7 @@ tw-passage[tags~="placenames"] {
   background-image: url("https://repository.dri.ie/objects/n584bw60x/files/n871cs44s/download?type=surrogate");
   background-size: 100% auto;    /* stretch width to full viewport, keep aspect ratio */
   background-position: top center; /* align top of image */
-  background-repeat: repeat;   /* don’t tile */
+  background-repeat: no-repeat;   /* don’t tile */
   background-color: white;        /* fills any extra space below the image */
   padding: 1.5em;                     /* internal text padding */
   border-radius: 10px;                /* slightly rounded corners */
@@ -121,7 +122,33 @@ tw-passage[tags~="prayer"] {
   background-image: url("https://repository.dri.ie/objects/bn99q0259/files/c534vf45x/download?type=surrogate");
   background-size: 100% auto;    /* stretch width to full viewport, keep aspect ratio */
   background-position: top center; /* align top of image */
-  background-repeat: repeat;   /* don’t tile */
+  background-repeat: no-repeat;   /* don’t tile */
+  background-color: white;        /* fills any extra space below the image */
+  padding: 1.5em;                     /* internal text padding */
+  border-radius: 10px;                /* slightly rounded corners */
+}
+
+/* A Sample Conversation */
+tw-passage[tags~="conversation"] {
+  position: relative;
+  min-height: 100vh;            /* ensures passage takes full viewport height */
+  background-image: url("https://repository.dri.ie/objects/1r66xh029/files/2b893v065/download?type=surrogate");
+  background-size: 100% auto;    /* stretch width to full viewport, keep aspect ratio */
+  background-position: top center; /* align top of image */
+  background-repeat: no-repeat;   /* don’t tile */
+  background-color: white;        /* fills any extra space below the image */
+  padding: 1.5em;                     /* internal text padding */
+  border-radius: 10px;                /* slightly rounded corners */
+  
+}
+/* Téarmaíocht an Bhuanchoimeádta Dhigitigh */
+tw-passage[tags~="teármaíocht"] {
+  position: relative;
+  min-height: 100vh;            /* ensures passage takes full viewport height */
+  background-image: url("https://repository.dri.ie/objects/mw237w14z/files/n584bj66h/download?type=surrogate");
+  background-size: 100% auto;    /* stretch width to full viewport, keep aspect ratio */
+  background-position: top center; /* align top of image */
+  background-repeat: no-repeat;   /* don’t tile */
   background-color: white;        /* fills any extra space below the image */
   padding: 1.5em;                     /* internal text padding */
   border-radius: 10px;                /* slightly rounded corners */
@@ -283,12 +310,16 @@ window.uploadRecording = async function() {
   }
 
   const nameInput = document.getElementById("username").value.trim();
+  const countryInput = document.getElementById("country").value.trim();
+  const irishInput = document.getElementById("irish").value.trim();
   const safeUser = sanitizeName(nameInput || "anon");
+  const safeCountry = sanitizeName(countryInput || "notstated");
+  const safeIrish = sanitizeName(irishInput || "notstated");
   
   const passageName = State.variables.currentPassage || "unknown";
   const safePassage = sanitizeName(passageName);
 
-  const filename = `${safeUser}_${safePassage}_${Date.now()}.webm`;
+  const filename = `${safeUser}_${safeCountry}_${safeIrish}_${safePassage}_${Date.now()}.webm`;
 
   console.log("Uploading:", filename);
 
@@ -333,7 +364,7 @@ window.reRecord = function() {
   document.getElementById("uploadBtn").disabled = true;
   document.getElementById("status").innerText =
     "Ready to record again";
-};</script><tw-tag name="counting" color="green"></tw-tag><tw-tag name="prayer" color="purple"></tw-tag><tw-tag name="days" color="yellow"></tw-tag><tw-tag name="placenames" color="purple"></tw-tag><tw-tag name="regular" color="orange"></tw-tag><tw-tag name="conversation" color="blue"></tw-tag><tw-tag name="start" color="blue"></tw-tag><tw-passagedata pid="1" name="DRI Speak Like Me" tags="" position="875,375" size="100,100">&lt;audio id=&quot;bgAudio&quot; autoplay loop&gt;
+};</script><tw-tag name="counting" color="green"></tw-tag><tw-tag name="prayer" color="purple"></tw-tag><tw-tag name="days" color="yellow"></tw-tag><tw-tag name="placenames" color="purple"></tw-tag><tw-tag name="regular" color="orange"></tw-tag><tw-tag name="conversation" color="blue"></tw-tag><tw-tag name="start" color="blue"></tw-tag><tw-tag name="teármaíocht" color="red"></tw-tag><tw-passagedata pid="1" name="DRI Speak Like Me" tags="" position="875,375" size="100,100">&lt;audio id=&quot;bgAudio&quot; autoplay loop&gt;
   &lt;source src=&quot;https://repository.dri.ie/objects/r49587021/files/r78293863/download?type=surrogate&quot; type=&quot;audio/ogg&quot;&gt;
   Your browser does not support the audio element.
 &lt;/audio&gt;
@@ -351,49 +382,86 @@ Video not playing? Try a browser that supports the HTML5 video tag!
 (align:&quot;=&gt;&lt;=&quot;)+(box:&quot;X=&quot;)[[START]]
 
 
-&#39;&#39;Audio Source&#39;&#39;
+&#39;&#39;Video Source&#39;&#39;
 &lt;p&gt;Arts and Culture in Education Research Repository &amp;#91;Depositor&amp;#93;. 10. Amhrán: Neansín Bhán - 2015 CCÉ Concert Tour of North America . Comhaltas Ceoltóirí Éireann. (01/01/2015). Sound &amp;#91;Type&amp;#93;. Digital Repository of Ireland (2020) &amp;#91;Publisher&amp;#93;.&lt;/p&gt;
 
 &#39;&#39;Video Source&#39;&#39;
-&lt;p&gt;University College Cork &amp;#91;Depositor&amp;#93;. Goblinwoode Water Video. Josh Wagner. (2025-05-20). MovingImage &amp;#91;Type&amp;#93;. Digital Repository of Ireland (2025) &amp;#91;Publisher&amp;#93;.&lt;/p&gt;</tw-passagedata><tw-passagedata pid="2" name="START" tags="start regular" position="875,500" size="100,100">&lt;p&gt;Choose an option&lt;p&gt;
+&lt;p&gt;University College Cork &amp;#91;Depositor&amp;#93;. Goblinwoode Water Video. Josh Wagner. (2025-05-20). MovingImage &amp;#91;Type&amp;#93;. Digital Repository of Ireland (2025) &amp;#91;Publisher&amp;#93;.&lt;/p&gt;
+</tw-passagedata><tw-passagedata pid="2" name="START" tags="start regular" position="875,500" size="100,100">&lt;p&gt;Choose an option&lt;p&gt;
 
-[[Days of the week in Irish]] [(text-colour:orange)+(bg:black)[//(text-colour:orange)+(bg:(hsl:0,0,0.5333,0.6))[Easy!]//]]
+[[Days of the week in Irish]] [(text-colour:black)+(bg:orange)[  &lt;b&gt;Easy!  ★☆☆&lt;/b&gt;  ]]
 
-[[Irish Placenames|placenames]] [(text-colour:orange)+(bg:black)[//(text-colour:orange)+(bg:(hsl:0,0,0.5333,0.6))[Easy!]//]]
+[[Digital Preservation Terms|digipresterms]][(text-colour:black)+(bg:orange)[  &lt;b&gt;Easy!  ★☆☆&lt;/b&gt;  ]]
 
-[[Counting in Irish|counting]] [(text-colour:orange)+(bg:black)[//(text-colour:orange)+(bg:(hsl:0,0,0.5333,0.6))[Medium!]//]]
+[[Counting in Irish|counting]]  [(text-colour:black)+(bg:orange)[  &lt;b&gt;Medium!  ★★☆&lt;/b&gt;  ]]
 
-[[A sample conversation]] [(text-colour:orange)+(bg:black)[//(text-colour:orange)+(bg:(hsl:0,0,0.5333,0.6))[Medium-hard!]//]]
+[[A sample conversation]] [(text-colour:black)+(bg:orange)[  &lt;b&gt;Medium!  ★★☆&lt;/b&gt;  ]]
 
-[[The Lord&#39;s Prayer (Our Father) in Irish]] [(text-colour:orange)+(bg:black)[//(text-colour:orange)+(bg:(hsl:0,0,0.5333,0.6))[Difficult!]//]]
+[[The Lord&#39;s Prayer (Our Father) in Irish]] [(text-colour:black)+(bg:orange)[  &lt;b&gt;Difficult!  ★★★&lt;/b&gt;  ]]
 
-&lt;p&gt;The background image on this page is University of Limerick &amp;#91;Depositor&amp;#93;. L1127, Murroe, Liscreagh. University of Limerick, Locating Bench Marks, Preserving Heritage, Ordnance Survey. (1830s-1990s). Image &amp;#91;Type&amp;#93;. Digital Repository of Ireland (2026) &amp;#91;Publisher&amp;#93;. https://doi.org/10.7486/DRI.1v540035x&lt;/p&gt;</tw-passagedata><tw-passagedata pid="3" name="The Lord&#39;s Prayer (Our Father) in Irish" tags="prayer regular" position="475,600" size="100,100">&lt;h1&gt;The Lord&#39;s Prayer (Our Father) in Irish&lt;/h1&gt;
+&lt;p&gt;The background image on this page is University of Limerick &amp;#91;Depositor&amp;#93;. L1127, Murroe, Liscreagh. University of Limerick, Locating Bench Marks, Preserving Heritage, Ordnance Survey. (1830s-1990s). Image &amp;#91;Type&amp;#93;. Digital Repository of Ireland (2026) &amp;#91;Publisher&amp;#93;. &lt;a href=&quot;https://doi.org/10.7486/DRI.1v540035x&quot; target=&quot;_blank&quot;&gt;https://doi.org/10.7486/DRI.1v540035x&lt;/a&gt;&lt;/p&gt;</tw-passagedata><tw-passagedata pid="3" name="The Lord&#39;s Prayer (Our Father) in Irish" tags="prayer regular" position="500,275" size="100,100">&lt;h1&gt;The Lord&#39;s Prayer (Our Father) in Irish&lt;/h1&gt;
 
-&lt;p&gt;Tionscadal Gréasáin Cheirníní Doegen, The Doegen Records Web Project is an archive of Irish dialect sound recordings made during 1928-31. It contains folktales, songs and other material recited by native Irish speakers from 17 counties. Crucially, it includes examples of dialects that are now extinct.&lt;/p&gt;
+&lt;p&gt;On this page you will hear a recitation of the Lord&#39;s Prayer by Tomás Ó Dálaigh from Co. Kerry. It was recorded primarily for phonetic purposes. There are five examples of each of these prayers in the Doegen collection. You are invited to copy it and record yourself reciting the prayer in your own voice.&lt;/p&gt;
 
-&lt;p&gt;Dr Wilhelm Doegen (1877-1967) was Director of the Lautabteilung, Preussische Staatsbibliothek (the Sound Department at the Prussian State Library), Berlin.&lt;/p&gt;
+&lt;p&gt;If you learned the Ár nAthair in school, you may find that the version recited here includes some archaic or regional differences to the version with which you are familiar. You are welcome to record either version.&lt;/p&gt;
+
+&lt;p&gt;This recording comes from the Tionscadal Gréasáin Cheirníní Doegen, The Doegen Records Web Project, wich is an archive of Irish dialect sound recordings made during 1928-31. It contains folktales, songs and other material recited by native Irish speakers from 17 counties. Crucially, it includes examples of dialects that are now extinct.&lt;/p&gt;
 
 &lt;p&gt;In 1926 the Irish government asked Dr Doegen to make recordings of Irish speech in the Gaeltacht and in areas of the country where Irish had suffered decline. The Department of Education asked the Royal Irish Academy if it would organize such a scheme (Survey of Dialects) and the Academy’s Irish Studies Committee undertook the task. The recordings were made by Dr Doegen and his assistant Karl Tempel between 1928 and 1931.&lt;/p&gt;
 
-&lt;p&gt;This item, a recitation of the Lord&#39;s Prayer and the Ave Maria by Tomás Ó Dálaigh from Co. Kerry, was recorded primarily for phonetic purposes. There are five examples of each of these prayers in the Doegen collection.&lt;/p&gt;
 
 &#39;&#39;Source:&#39;&#39;
-&lt;p&gt;Royal Irish Academy &amp;#91;Depositor&amp;#93;. Paidir an Tiarna; an tÁivé Máiria.The Lord&#39;s prayer; the Ave Maria. Dr Wilhelm Doegen. (1928-09-13). Sound &amp;#91;Type&amp;#93;. Digital Repository of Ireland (2022) &amp;#91;Publisher&amp;#93;. https://doi.org/10.7486/DRI.d7926464h&lt;/p&gt;
+&lt;p&gt;Royal Irish Academy &amp;#91;Depositor&amp;#93;. Paidir an Tiarna; an tÁivé Máiria.The Lord&#39;s prayer; the Ave Maria. Dr Wilhelm Doegen. (1928-09-13). Sound &amp;#91;Type&amp;#93;. Digital Repository of Ireland (2022) &amp;#91;Publisher&amp;#93;. &lt;a href=&quot;https://doi.org/10.7486/DRI.d7926464h&quot; target=&quot;_blank&quot;&gt;https://doi.org/10.7486/DRI.d7926464h&lt;/a&gt;&lt;/p&gt;
 
 &lt;audio id=&quot;audioClip&quot; preload=&quot;auto&quot; controls&gt;
-&lt;source src=&quot;https://repository.dri.ie/objects/d7926464h/files/f188f836q/download?type=surrogate#t=00:00:00,00:00:16&quot;&gt;
+&lt;source src=&quot;https://digital-repository-of-ireland.github.io/SpeakLikeMe/arnathair.mp3&quot;&gt;
 &lt;/audio&gt;
 
 [[Let me try!|recordlordsprayer]]
 
-&lt;p&gt;The background image on each of these pages is Hunt Museum, Limerick &amp;#91;Depositor&amp;#93;. Reliquary cross-pendant . Spanish-English. (c.1500 - c1550). Image &amp;#91;Type&amp;#93;. Digital Repository of Ireland (2022) &amp;#91;Publisher&amp;#93. https://doi.org/10.7486/DRI.bn99q0259-2&lt;/p&gt;
+&lt;p&gt;The background image on each of these pages is Hunt Museum, Limerick &amp;#91;Depositor&amp;#93;. Reliquary cross-pendant . Spanish-English. (c.1500 - c1550). Image &amp;#91;Type&amp;#93;. Digital Repository of Ireland (2022) &amp;#91;Publisher&amp;#93. &lt;a href=&quot;https://doi.org/10.7486/DRI.bn99q0259-2&quot; target=&quot;_blank&quot;&gt;https://doi.org/10.7486/DRI.bn99q0259-2&lt;/a&gt;&lt;/p&gt;
 
-</tw-passagedata><tw-passagedata pid="4" name="recordlordsprayer" tags="" position="275,725" size="100,100">(set: $currentPassage to &quot;prayer&quot;)
+</tw-passagedata><tw-passagedata pid="4" name="recordlordsprayer" tags="prayer regular" position="375,150" size="100,100">(set: $currentPassage to &quot;prayer&quot;)
 &lt;audio id=&quot;audioClip&quot; preload=&quot;auto&quot; controls&gt;
-&lt;source src=&quot;https://repository.dri.ie/objects/d7926464h/files/f188f836q/download?type=surrogate#t=00:00:00,00:00:16&quot;&gt;
+&lt;source src=&quot;https://digital-repository-of-ireland.github.io/SpeakLikeMe/arnathair.mp3&quot;&gt;
 &lt;/audio&gt;
-&lt;h2&gt;Transcription&lt;/h2&gt;
-&lt;p class=&quot;transcript&quot;&gt;Ár nAthair atá ar neamh,
+
+&lt;p&gt;If you learned the Ár nAthair in school, you may find that the version recited here includes some archaic or regional differences to the version with which you are familiar. You are welcome to record either version&lt;/p&gt;
+
+&lt;table&gt;
+&lt;tr&gt;&lt;th&gt;Transcription&lt;/th&gt;&lt;th&gt;Translation&lt;/th&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;Ár nAthair atá ar neamh&lt;/td&gt;&lt;td&gt;Our father, who art in heaven,&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;Go naomhaítear t&#39;ainm,&lt;/td&gt;&lt;td&gt;Hallowed be thy name,&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;Go dtaga do ríocht,&lt;/td&gt;&lt;td&gt;Thy kingdom come,&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;Go ndéantar do thoil&lt;/td&gt;&lt;td&gt;Thy will be done,&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;Ar an dtalamh mar a déantar ar neamh.&lt;/td&gt;&lt;td&gt;On earch as it is in heaven.&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;Ár n-arán laethúil tabhair dúinn inniubh.&lt;/td&gt;&lt;td&gt;Give us today our daily bread.&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;Maith dhúinn ár gcionta&lt;/td&gt;&lt;td&gt;Forgive us our trespasses&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;Fé mar mhaithimid do chách a chiontaíos inár n-aghaidh.&lt;/td&gt;&lt;td&gt;As we forgive those who trespass against us.&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;Ná leig sinn i gcathuíbh ach saor sinn ó olc.&lt;/td&gt;&lt;td&gt;Lead us not into temptation, but deliver us from evil.&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;Amen.&lt;/td&gt;&lt;td&gt;Amen.&lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;
+
+&lt;p&gt;If you wish to contribute your recording to the DRI&#39;s Speak Like Me Collection please use the &quot;Upload&quot; button below. Contributions will be archived in the Digital Repository of Ireland under a Creative Commons CC BY 4.0 Attribution licence. They will be made available to the public.&lt;/p&gt;
+
+&lt;p&gt;If you enter your name you will be listed as the creator of the digital object.&lt;/p&gt;
+
+&lt;label&gt;
+  Your name:
+  &lt;input type=&quot;text&quot; id=&quot;username&quot; placeholder=&quot;Enter your name&quot;&gt;
+&lt;/label&gt;
+
+&lt;label&gt;
+  Your Country of Origin:
+  &lt;input type=&quot;text&quot; id=&quot;country&quot; placeholder=&quot;What country are you from?&quot;&gt;
+&lt;/label&gt;
+
+&lt;label&gt;
+  Your Irish Speaking Level:
+  &lt;input type=&quot;text&quot; id=&quot;irish&quot; placeholder=&quot;Do you speak Irish?&quot;&gt;
+&lt;/label&gt;
+
+&lt;h2&gt;Ár nAthair atá ar neamh,
 Go naomhaítear t&#39;ainm,
 Go dtaga do ríocht,
 Go ndéantar do thoil
@@ -402,36 +470,40 @@ Ar an dtalamh mar a déantar ar neamh.
 Maith dhúinn ár gcionta
 Fé mar mhaithimid do chách a chiontaíos inár n-aghaidh.
 Ná leig sinn i gcathuíbh ach saor sinn ó olc.
-Amen.
-&lt;/p&gt;
-&lt;h2&gt;Record your response&lt;/h2&gt;
-&lt;p&gt;If you wish to contribute your recording to the DRI&#39;s Speak Like Me Collection please use the &quot;Upload&quot; button below. Contributions will be archived in the Digital Repository of Ireland under a ??? licence. They will be made available to the public.&lt;/p&gt;
-&lt;p&gt;If you enter your name you will be listed as the creator of the digital object.&lt;/p&gt;
-&lt;label&gt;
-  Your name:
-  &lt;input type=&quot;text&quot; id=&quot;username&quot; placeholder=&quot;Enter your name&quot;&gt;
-&lt;/label&gt;
-&lt;button onclick=&quot;startRecording(&#39;audio&#39;)&quot;&gt;Start Audio&lt;/button&gt;
+Amen.&lt;/h2&gt;
+
+&lt;button onclick=&quot;startRecording(&#39;audio&#39;)&quot;&gt;Start Recording&lt;/button&gt;
 &lt;button onclick=&quot;stopRecording()&quot;&gt;Stop&lt;/button&gt;
+
 &lt;p id=&quot;status&quot;&gt;&lt;/p&gt;
+
 &lt;div id=&quot;preview&quot;&gt;&lt;/div&gt;
+
 &lt;div id=&quot;controls&quot; style=&quot;display:none; margin-top:10px;&quot;&gt;
   &lt;button id=&quot;uploadBtn&quot; onclick=&quot;uploadRecording()&quot; disabled&gt;Upload&lt;/button&gt;
   &lt;button onclick=&quot;reRecord()&quot;&gt;Re-record&lt;/button&gt;
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="5" name="record1to10" tags="" position="575,825" size="100,100">(set: $currentPassage to &quot;counting&quot;)
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="5" name="record1to10" tags="counting regular" position="350,550" size="100,100">(set: $currentPassage to &quot;counting&quot;)
+&lt;h1&gt;Counting - Ag Comhaireamh&lt;/h1&gt;
 
 &lt;audio id=&quot;audioClip&quot; preload=&quot;auto&quot; controls&gt;
 &lt;source src=&quot;https://digital-repository-of-ireland.github.io/SpeakLikeMe/numbers.mp3&quot;&gt;
 &lt;/audio&gt;
 
-&lt;h3&gt;Transcript&lt;/h3&gt;
-&lt;p class=&quot;transcript&quot;&gt;Aon. Dó. Trí. Ceathair. Cúig. Sé. Seacht. Ocht. Naoi. Deich.&lt;/p&gt;
+&lt;table&gt;
+&lt;tr&gt;&lt;th&gt;Transcript&lt;/th&gt;&lt;th&gt;Translation&lt;/th&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;Aon&lt;/td&gt;&lt;td&gt;One&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;Dó&lt;/td&gt;&lt;td&gt;Two&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;Trí&lt;/td&gt;&lt;td&gt;Three&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;Ceathair&lt;/td&gt;&lt;td&gt;Four&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;Cúig&lt;/td&gt;&lt;td&gt;Five&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;Sé&lt;/td&gt;&lt;td&gt;Six&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;Seacht&lt;/td&gt;&lt;td&gt;Seven&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;Ocht&lt;/td&gt;&lt;td&gt;Eight&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;Naoi&lt;/td&gt;&lt;td&gt;Nine&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;Deich&lt;/td&gt;&lt;td&gt;Ten&lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;
 
-&lt;h3&gt;Translation&lt;/h3&gt;
-&lt;p&gt;One. Two. Three. Four. Five. Six. Seven. Eight. Nine. Ten.&lt;/p&gt;
-
-&lt;h2&gt;Record your response&lt;/h2&gt;
-&lt;p&gt;If you wish to contribute your recording to the DRI&#39;s Speak Like Me Collection please use the &quot;Upload&quot; button below. Contributions will be archived in the Digital Repository of Ireland under a ??? licence. They will be made available to the public.&lt;/p&gt;
+&lt;p&gt;If you wish to contribute your recording to the DRI&#39;s Speak Like Me Collection please use the &quot;Upload&quot; button below. Contributions will be archived in the Digital Repository of Ireland under a Creative Commons CC BY 4.0 Attribution licence. They will be made available to the public.&lt;/p&gt;
 
 &lt;p&gt;If you enter your name you will be listed as the creator of the digital object.&lt;/p&gt;
 
@@ -440,7 +512,19 @@ Amen.
   &lt;input type=&quot;text&quot; id=&quot;username&quot; placeholder=&quot;Enter your name&quot;&gt;
 &lt;/label&gt;
 
-&lt;button onclick=&quot;startRecording(&#39;audio&#39;)&quot;&gt;Start Audio&lt;/button&gt;
+&lt;label&gt;
+  Your Country of Origin:
+  &lt;input type=&quot;text&quot; id=&quot;country&quot; placeholder=&quot;What country are you from?&quot;&gt;
+&lt;/label&gt;
+
+&lt;label&gt;
+  Your Irish Speaking Level:
+  &lt;input type=&quot;text&quot; id=&quot;irish&quot; placeholder=&quot;Do you speak Irish?&quot;&gt;
+&lt;/label&gt;
+
+&lt;h2&gt;Aon. Dó. Trí. Ceathair. Cúig. Sé. Seacht. Ocht. Naoi. Deich.&lt;/h2&gt;
+
+&lt;button onclick=&quot;startRecording(&#39;audio&#39;)&quot;&gt;Start Recording&lt;/button&gt;
 &lt;button onclick=&quot;stopRecording()&quot;&gt;Stop&lt;/button&gt;
 
 &lt;p id=&quot;status&quot;&gt;&lt;/p&gt;
@@ -450,21 +534,25 @@ Amen.
 &lt;div id=&quot;controls&quot; style=&quot;display:none; margin-top:10px;&quot;&gt;
   &lt;button id=&quot;uploadBtn&quot; onclick=&quot;uploadRecording()&quot; disabled&gt;Upload&lt;/button&gt;
   &lt;button onclick=&quot;reRecord()&quot;&gt;Re-record&lt;/button&gt;
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="6" name="A sample conversation" tags="conversation regular" position="1375,625" size="100,100">&lt;h1&gt;A sample conversation&lt;/h1&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="6" name="A sample conversation" tags="conversation regular" position="1400,575" size="100,100">&lt;h1&gt;A sample conversation&lt;/h1&gt;
+
+&lt;p&gt;On this page you will hear a recitation of a sample conversation by Proinnsias Ó Súilleabháin from Co. Cork. It was recorded primarily for phonetic purposes. It is one of a small number of such items in the Doegen collection. You are invited to copy it and record yourself taking part in this conversation in your own voice.&lt;/p&gt;
+
 &lt;p&gt;Tionscadal Gréasáin Cheirníní Doegen, The Doegen Records Web Project is an archive of Irish dialect sound recordings made during 1928-31. It contains folktales, songs and other material recited by native Irish speakers from 17 counties. Crucially, it includes examples of dialects that are now extinct.&lt;/p&gt;
 
 &lt;p&gt;In 1926 the Irish government asked Dr Doegen to make recordings of Irish speech in the Gaeltacht and in areas of the country where Irish had suffered decline. The Department of Education asked the Royal Irish Academy if it would organize such a scheme (Survey of Dialects) and the Academy’s Irish Studies Committee undertook the task. The recordings were made by Dr Doegen and his assistant Karl Tempel between 1928 and 1931.&lt;/p&gt;
 
-&lt;p&gt;This item, a recitation of a sample conversation by Proinnsias Ó Súilleabháin from Co. Cork, was recorded primarily for phonetic purposes. It is one of a small number of such items in the Doegen collection.&lt;/p&gt;
-
 &#39;&#39;Source:&#39;&#39;
-&lt;p&gt;Royal Irish Academy &amp;#91;Depositor&amp;#93;. Comhrá samplach.Sample dialogue. Dr Wilhelm Doegen. (1928-09-13). Sound &amp;#91;Type&amp;#93;. Digital Repository of Ireland (2022) &amp;#91;Publisher&amp;#93;. https://doi.org/10.7486/DRI.s178j820k&lt;/p&gt;
+&lt;p&gt;Royal Irish Academy &amp;#91;Depositor&amp;#93;. Comhrá samplach.Sample dialogue. Dr Wilhelm Doegen. (1928-09-13). Sound &amp;#91;Type&amp;#93;. Digital Repository of Ireland (2022) &amp;#91;Publisher&amp;#93;. &lt;a href=&quot;https://doi.org/10.7486/DRI.s178j820k&quot; target=&quot;_blank&quot;&gt;https://doi.org/10.7486/DRI.s178j820k&lt;/a&gt;&lt;/p&gt;
 
 &lt;audio id=&quot;audioClip&quot; preload=&quot;auto&quot; controls&gt;
 &lt;source src=&quot;https://repository.dri.ie/objects/s178j820k/files/sx61t876j/download?type=surrogate&quot;&gt;
 &lt;/audio&gt;
 
-[[Let me try!|recordsampleconv]]</tw-passagedata><tw-passagedata pid="7" name="recordsampleconv" tags="" position="1425,775" size="100,100">(set: $currentPassage to &quot;conversation&quot;)
+[[Let me try!|recordsampleconv]]
+
+&lt;p&gt;The background image on each of these pages is Dublin City Library and Archive &amp;#91;Depositor&amp;#93;. A friendly chat at cottage, Clogherhead, County Louth.. Fáilte Ireland. (1962). Image &amp;#91;Type&amp;#93;. Digital Repository of Ireland (2020) &amp;#91;Publisher&amp;#93;. &lt;a href=&quot;https://doi.org/10.7486/DRI.1r66xh029&quot; target=&quot;_blank&quot;&gt;https://doi.org/10.7486/DRI.1r66xh029&lt;/a&gt;&lt;/p&gt;
+</tw-passagedata><tw-passagedata pid="7" name="recordsampleconv" tags="conversation regular" position="1650,600" size="100,100">(set: $currentPassage to &quot;conversation&quot;)
 &lt;audio id=&quot;audioClip&quot; preload=&quot;auto&quot; controls&gt;
 &lt;source src=&quot;https://repository.dri.ie/objects/s178j820k/files/sx61t876j/download?type=surrogate&quot;&gt;
 &lt;/audio&gt;
@@ -487,12 +575,41 @@ Amen.
 &lt;tr&gt;&lt;td&gt; &quot;Slán leat is go n-éirí do bhóthar leat.&quot;&lt;/td&gt;&lt;td&gt;Goodbye and good luck on your journey.&lt;/td&gt;&lt;/tr&gt;
 &lt;/table&gt;
 
-&lt;p&gt;If you wish to contribute your recording to the DRI&#39;s Speak Like Me Collection please use the &quot;Upload&quot; button below. Contributions will be archived in the Digital Repository of Ireland under a ??? licence. They will be made available to the public. If you enter your name you will be listed as the creator of the digital object.&lt;/p&gt;
+&lt;p&gt;If you wish to contribute your recording to the DRI&#39;s Speak Like Me Collection please use the &quot;Upload&quot; button below. Contributions will be archived in the Digital Repository of Ireland under a Creative Commons CC BY 4.0 Attribution licence. They will be made available to the public.&lt;/p&gt;
+
+&lt;p&gt;If you enter your name you will be listed as the creator of the digital object.&lt;/p&gt;
 
 &lt;label&gt;
   Your name:
   &lt;input type=&quot;text&quot; id=&quot;username&quot; placeholder=&quot;Enter your name&quot;&gt;
 &lt;/label&gt;
+
+&lt;label&gt;
+  Your Country of Origin:
+  &lt;input type=&quot;text&quot; id=&quot;country&quot; placeholder=&quot;What country are you from?&quot;&gt;
+&lt;/label&gt;
+
+&lt;label&gt;
+  Your Irish Speaking Level:
+  &lt;input type=&quot;text&quot; id=&quot;irish&quot; placeholder=&quot;Do you speak Irish?&quot;&gt;
+&lt;/label&gt;
+
+&lt;h2&gt;
+&quot;Dia dhuit.&quot;
+&quot;Dia is Muire dhuit.&quot;
+&quot;Conas tánn tú?&quot;
+&quot;Cuíosach, slán go rabhais. Conas tá tú féin?&quot;
+&quot;Ní gearánta dhom, baochas le Dia.&quot;
+&quot;Bhfuil aon scéal nua agat?&quot; 
+&quot;Níl focal. Bhfuil agat féin?&quot; 
+&quot;Níl, mhuise.&quot; 
+&quot;Cad é an t-am é, más é do thoil é?&quot; 
+&quot;Tá sé a hocht a chlog.&quot; 
+&quot;Is mithid dom bheith ag dul abhaile.&quot; 
+&quot;Tóg bog an saol! Tá sé luath fós.&quot; 
+&quot;Tá sé déanach go leor. Slán agat.&quot; 
+&quot;Slán leat is go n-éirí do bhóthar leat.&quot;
+&lt;/h2&gt;
 
 &lt;button onclick=&quot;startRecording(&#39;audio&#39;)&quot;&gt;Start Audio&lt;/button&gt;
 &lt;button onclick=&quot;stopRecording()&quot;&gt;Stop&lt;/button&gt;
@@ -504,7 +621,7 @@ Amen.
 &lt;div id=&quot;controls&quot; style=&quot;display:none; margin-top:10px;&quot;&gt;
   &lt;button id=&quot;uploadBtn&quot; onclick=&quot;uploadRecording()&quot; disabled&gt;Upload&lt;/button&gt;
   &lt;button onclick=&quot;reRecord()&quot;&gt;Re-record&lt;/button&gt;
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="8" name="Days of the week in Irish" tags="days regular" position="1650,425" size="100,100">&lt;h1&gt;The Days of the Week in Irish&lt;/h1&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="8" name="Days of the week in Irish" tags="days regular" position="1375,225" size="100,100">&lt;h1&gt;The Days of the Week in Irish&lt;/h1&gt;
 &lt;p&gt;On the following pages you will hear various speakers reciting days of the week. You are invited to copy them and record the days of the week in your own voice.&lt;/p&gt;
 
 &lt;p&gt;These recordings come from the Tionscadal Gréasáin Cheirníní Doegen, The Doegen Records Web Project, wich is an archive of Irish dialect sound recordings made during 1928-31. It contains folktales, songs and other material recited by native Irish speakers from 17 counties. Crucially, it includes examples of dialects that are now extinct.&lt;/p&gt;
@@ -518,41 +635,53 @@ Amen.
 &lt;p&gt;The Speakers and Dialects are listed below, along with the citations for the digital objects from which these clips were taken.&lt;/p&gt;
 
 &#39;&#39;Tomás Ó Gallchobhair from Co. Donegal&#39;&#39;
-&lt;p&gt;Royal Irish Academy &amp;#91;Depositor&amp;#93;. Laethanta na seachtaine.The days of the week. Dr Wilhelm Doegen. (1931-10-03). Sound &amp;#91;Type&amp;#93;. Digital Repository of Ireland (2022) &amp;#91;Publisher&amp;#93;. https://doi.org/10.7486/DRI.r7829447m&lt;/p&gt;
+&lt;p&gt;Royal Irish Academy &amp;#91;Depositor&amp;#93;. Laethanta na seachtaine.The days of the week. Dr Wilhelm Doegen. (1931-10-03). Sound &amp;#91;Type&amp;#93;. Digital Repository of Ireland (2022) &amp;#91;Publisher&amp;#93;. &lt;a href=&quot;https://doi.org/10.7486/DRI.r7829447m&quot; target=&quot;_blank&quot;&gt;https://doi.org/10.7486/DRI.r7829447m&lt;/a&gt;&lt;/p&gt;
 
 &#39;&#39;Domhnall Ó Céilleachair from Co. Cork&#39;&#39;
-&lt;p&gt;Royal Irish Academy &amp;#91;Depositor&amp;#93;. An feirmeoir agus an bacach; laethanta na seachtaine; focail.The farmer and the beggar; days of the week; words. Dr Wilhelm Doegen. (1928-09-03). Sound &amp;#91;Type&amp;#93;. Digital Repository of Ireland (2022) &amp;#91;Publisher&amp;#93;. https://doi.org/10.7486/DRI.pn89sw062&lt;/p&gt;
+&lt;p&gt;Royal Irish Academy &amp;#91;Depositor&amp;#93;. An feirmeoir agus an bacach; laethanta na seachtaine; focail.The farmer and the beggar; days of the week; words. Dr Wilhelm Doegen. (1928-09-03). Sound &amp;#91;Type&amp;#93;. Digital Repository of Ireland (2022) &amp;#91;Publisher&amp;#93;. &lt;a href=&quot;https://doi.org/10.7486/DRI.pn89sw062&quot; target=&quot;_blank&quot;&gt;https://doi.org/10.7486/DRI.pn89sw062&lt;/a&gt;&lt;/p&gt;
 
 &#39;&#39;Seán Mag Uidhir from Co. Cavan&#39;&#39;
-&lt;p&gt;Royal Irish Academy &amp;#91;Depositor&amp;#93;. Laethanta na seachtaine.The days of the week. Dr Wilhelm Doegen. (1931-09-23). Sound &amp;#91;Type&amp;#93;. Digital Repository of Ireland (2022) &amp;#91;Publisher&amp;#93;. https://doi.org/10.7486/DRI.9w03fr48g&lt;/p&gt;
+&lt;p&gt;Royal Irish Academy &amp;#91;Depositor&amp;#93;. Laethanta na seachtaine.The days of the week. Dr Wilhelm Doegen. (1931-09-23). Sound &amp;#91;Type&amp;#93;. Digital Repository of Ireland (2022) &amp;#91;Publisher&amp;#93;. &lt;a href=&quot;https://doi.org/10.7486/DRI.9w03fr48g&quot; target=&quot;_blank&quot;&gt;https://doi.org/10.7486/DRI.9w03fr48g&lt;/a&gt;&lt;/p&gt;
 
 &#39;&#39;Áine Ní Mhuireadhaigh from Co. Donegal&#39;&#39;
-&lt;p&gt;Royal Irish Academy &amp;#91;Depositor&amp;#93;. Laethanta na seachtaine.The days of the week. Dr Wilhelm Doegen. (1931-09-30). Sound &amp;#91;Type&amp;#93;. Digital Repository of Ireland (2022) &amp;#91;Publisher&amp;#93;. https://doi.org/10.7486/DRI.8g851874c&lt;/p&gt;
+&lt;p&gt;Royal Irish Academy &amp;#91;Depositor&amp;#93;. Laethanta na seachtaine.The days of the week. Dr Wilhelm Doegen. (1931-09-30). Sound &amp;#91;Type&amp;#93;. Digital Repository of Ireland (2022) &amp;#91;Publisher&amp;#93;. &lt;a href=&quot;https://doi.org/10.7486/DRI.8g851874c&quot; target=&quot;_blank&quot;&gt;https://doi.org/10.7486/DRI.8g851874c&lt;/a&gt;&lt;/p&gt;
 
 &#39;&#39;Eoin Ó Cianáin from Co. Tyrone&#39;&#39;
-&lt;p&gt;Royal Irish Academy &amp;#91;Depositor&amp;#93;. Laethanta na seachtaine.The days of the week. Dr Wilhelm Doegen. (1931-09-24). Sound &amp;#91;Type&amp;#93;. Digital Repository of Ireland (2022) &amp;#91;Publisher&amp;#93;. https://doi.org/10.7486/DRI.54260016c&lt;/p&gt;
+&lt;p&gt;Royal Irish Academy &amp;#91;Depositor&amp;#93;. Laethanta na seachtaine.The days of the week. Dr Wilhelm Doegen. (1931-09-24). Sound &amp;#91;Type&amp;#93;. Digital Repository of Ireland (2022) &amp;#91;Publisher&amp;#93;. &lt;a href=&quot;https://doi.org/10.7486/DRI.54260016c&quot; target=&quot;_blank&quot;&gt;https://doi.org/10.7486/DRI.54260016c&lt;/a&gt;&lt;/p&gt;
 
 &#39;&#39;Brighid Ní Chaslaigh from Co. Louth&#39;&#39;
-&lt;p&gt;Royal Irish Academy &amp;#91;Depositor&amp;#93;. Laethanta na seachtaine.The days of the week. Dr Wilhelm Doegen. (1931-09-25). Sound &amp;#91;Type&amp;#93;. Digital Repository of Ireland (2022) &amp;#91;Publisher&amp;#93;. https://doi.org/10.7486/DRI.2z119c690&lt;/p&gt;
+&lt;p&gt;Royal Irish Academy &amp;#91;Depositor&amp;#93;. Laethanta na seachtaine.The days of the week. Dr Wilhelm Doegen. (1931-09-25). Sound &amp;#91;Type&amp;#93;. Digital Repository of Ireland (2022) &amp;#91;Publisher&amp;#93;. &lt;a href=&quot;https://doi.org/10.7486/DRI.2z119c690&quot; target=&quot;_blank&quot;&gt;https://doi.org/10.7486/DRI.2z119c690&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;The background image on each of these pages is An Post Museum and Archive &amp;#91;Depositor&amp;#93;. Iris an Phuist March 1922. Department of Posts &amp; Telegraphs. (1922). Image &amp;#91;Type&amp;#93;. Digital Repository of Ireland (2024) &amp;#91;Publisher&amp;#93. https://doi.org/10.7486/DRI.fq97nq29c&lt;/p&gt;
-</tw-passagedata><tw-passagedata pid="9" name="Monday" tags="days regular" position="1475,275" size="100,100">(set: $currentPassage to &quot;Monday&quot;)
-{&lt;h1&gt;Monday - Dé Luain&lt;/h1&gt;
+&lt;p&gt;The background image on each of these pages is Royal Irish Academy &amp;#91;Depositor&amp;#93;. Ordnance Survey Letters for Counties Cavan and Leitrim: No. 39.. O&#39;Donovan, John, O&#39;Keefe, Patrick, O&#39;Curry, Eugene. (1836). Text &amp;#91;Type&amp;#93;. Digital Repository of Ireland (2024) &amp;#91;Publisher&amp;#93. &lt;a href=&quot;https://doi.org/10.7486/DRI.98818k87k&quot; target=&quot;_blank&quot;&gt;https://doi.org/10.7486/DRI.98818k87k&lt;/a&gt;&lt;/p&gt;
+</tw-passagedata><tw-passagedata pid="9" name="Monday" tags="days regular" position="1325,50" size="100,100">(set: $currentPassage to &quot;Monday&quot;)
+&lt;h1&gt;Monday - Dé Luain&lt;/h1&gt;
 
 &lt;audio id=&quot;audioClip&quot; preload=&quot;auto&quot; controls&gt;
 &lt;source src=&quot;https://digital-repository-of-ireland.github.io/SpeakLikeMe/Mondays.mp3&quot;&gt;
 &lt;/audio&gt;
 
-&lt;h2&gt;Dé Luain&lt;/h2&gt;
+&lt;p&gt;If you wish to contribute your recording to the DRI&#39;s Speak Like Me Collection please use the &quot;Upload&quot; button below. Contributions will be archived in the Digital Repository of Ireland under a Creative Commons CC BY 4.0 Attribution licence. They will be made available to the public.&lt;/p&gt;
 
-&lt;p&gt;If you wish to contribute your recording to the DRI&#39;s Speak Like Me Collection please use the &quot;Upload&quot; button below. Contributions will be archived in the Digital Repository of Ireland under a ??? licence. They will be made available to the public. If you enter your name you will be listed as the creator of the digital object.&lt;/p&gt;
-}
+&lt;p&gt;If you enter your name you will be listed as the creator of the digital object.&lt;/p&gt;
+
 &lt;label&gt;
   Your name:
   &lt;input type=&quot;text&quot; id=&quot;username&quot; placeholder=&quot;Enter your name&quot;&gt;
 &lt;/label&gt;
 
-&lt;button onclick=&quot;startRecording(&#39;audio&#39;)&quot;&gt;Start Audio&lt;/button&gt;
+&lt;label&gt;
+  Your Country of Origin:
+  &lt;input type=&quot;text&quot; id=&quot;country&quot; placeholder=&quot;What country are you from?&quot;&gt;
+&lt;/label&gt;
+
+&lt;label&gt;
+  Your Irish Speaking Level:
+  &lt;input type=&quot;text&quot; id=&quot;irish&quot; placeholder=&quot;Do you speak Irish?&quot;&gt;
+&lt;/label&gt;
+
+&lt;h2&gt;Dé Luain&lt;/h2&gt;
+
+&lt;button onclick=&quot;startRecording(&#39;audio&#39;)&quot;&gt;Start Recording&lt;/button&gt;
 &lt;button onclick=&quot;stopRecording()&quot;&gt;Stop&lt;/button&gt;
 
 &lt;p id=&quot;status&quot;&gt;&lt;/p&gt;
@@ -562,23 +691,35 @@ Amen.
 &lt;div id=&quot;controls&quot; style=&quot;display:none; margin-top:10px;&quot;&gt;
   &lt;button id=&quot;uploadBtn&quot; onclick=&quot;uploadRecording()&quot; disabled&gt;Upload&lt;/button&gt;
   &lt;button onclick=&quot;reRecord()&quot;&gt;Re-record&lt;/button&gt;
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="10" name="Tuesday" tags="days regular" position="1600,200" size="100,100">(set: $currentPassage to &quot;Tuesday&quot;)
-{&lt;h1&gt;Tuesday - Dé Máirt&lt;/h1&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="10" name="Tuesday" tags="days regular" position="1450,25" size="100,100">(set: $currentPassage to &quot;Tuesday&quot;)
+&lt;h1&gt;Tuesday - Dé Máirt&lt;/h1&gt;
 
 &lt;audio id=&quot;audioClip&quot; preload=&quot;auto&quot; controls&gt;
 &lt;source src=&quot;https://digital-repository-of-ireland.github.io/SpeakLikeMe/Tuesdays.mp3&quot;&gt;
 &lt;/audio&gt;
 
-&lt;h2&gt;Dé Máirt&lt;/h2&gt;
+&lt;p&gt;If you wish to contribute your recording to the DRI&#39;s Speak Like Me Collection please use the &quot;Upload&quot; button below. Contributions will be archived in the Digital Repository of Ireland under a Creative Commons CC BY 4.0 Attribution licence. They will be made available to the public.&lt;/p&gt;
 
-&lt;p&gt;If you wish to contribute your recording to the DRI&#39;s Speak Like Me Collection please use the &quot;Upload&quot; button below. Contributions will be archived in the Digital Repository of Ireland under a ??? licence. They will be made available to the public. If you enter your name you will be listed as the creator of the digital object.&lt;/p&gt;
-}
+&lt;p&gt;If you enter your name you will be listed as the creator of the digital object.&lt;/p&gt;
+
 &lt;label&gt;
   Your name:
   &lt;input type=&quot;text&quot; id=&quot;username&quot; placeholder=&quot;Enter your name&quot;&gt;
 &lt;/label&gt;
 
-&lt;button onclick=&quot;startRecording(&#39;audio&#39;)&quot;&gt;Start Audio&lt;/button&gt;
+&lt;label&gt;
+  Your Country of Origin:
+  &lt;input type=&quot;text&quot; id=&quot;country&quot; placeholder=&quot;What country are you from?&quot;&gt;
+&lt;/label&gt;
+
+&lt;label&gt;
+  Your Irish Speaking Level:
+  &lt;input type=&quot;text&quot; id=&quot;irish&quot; placeholder=&quot;Do you speak Irish?&quot;&gt;
+&lt;/label&gt;
+
+&lt;h2&gt;Dé Máirt&lt;/h2&gt;
+
+&lt;button onclick=&quot;startRecording(&#39;audio&#39;)&quot;&gt;Start Recording&lt;/button&gt;
 &lt;button onclick=&quot;stopRecording()&quot;&gt;Stop&lt;/button&gt;
 
 &lt;p id=&quot;status&quot;&gt;&lt;/p&gt;
@@ -588,23 +729,35 @@ Amen.
 &lt;div id=&quot;controls&quot; style=&quot;display:none; margin-top:10px;&quot;&gt;
   &lt;button id=&quot;uploadBtn&quot; onclick=&quot;uploadRecording()&quot; disabled&gt;Upload&lt;/button&gt;
   &lt;button onclick=&quot;reRecord()&quot;&gt;Re-record&lt;/button&gt;
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="11" name="Wednesday" tags="days regular" position="1725,200" size="100,100">(set: $currentPassage to &quot;Wednesday&quot;)
-{&lt;h1&gt;Wednesday - Dé Céadaoine&lt;/h1&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="11" name="Wednesday" tags="days regular" position="1575,75" size="100,100">(set: $currentPassage to &quot;Wednesday&quot;)
+&lt;h1&gt;Wednesday - Dé Céadaoine&lt;/h1&gt;
 
 &lt;audio id=&quot;audioClip&quot; preload=&quot;auto&quot; controls&gt;
 &lt;source src=&quot;https://digital-repository-of-ireland.github.io/SpeakLikeMe/Wednesdays.mp3&quot;&gt;
 &lt;/audio&gt;
 
-&lt;h2&gt;Dé Céadaoine&lt;/h2&gt;
+&lt;p&gt;If you wish to contribute your recording to the DRI&#39;s Speak Like Me Collection please use the &quot;Upload&quot; button below. Contributions will be archived in the Digital Repository of Ireland under a Creative Commons CC BY 4.0 Attribution licence. They will be made available to the public.&lt;/p&gt;
 
-&lt;p&gt;If you wish to contribute your recording to the DRI&#39;s Speak Like Me Collection please use the &quot;Upload&quot; button below. Contributions will be archived in the Digital Repository of Ireland under a ??? licence. They will be made available to the public. If you enter your name you will be listed as the creator of the digital object.&lt;/p&gt;
-}
+&lt;p&gt;If you enter your name you will be listed as the creator of the digital object.&lt;/p&gt;
+
 &lt;label&gt;
   Your name:
   &lt;input type=&quot;text&quot; id=&quot;username&quot; placeholder=&quot;Enter your name&quot;&gt;
 &lt;/label&gt;
 
-&lt;button onclick=&quot;startRecording(&#39;audio&#39;)&quot;&gt;Start Audio&lt;/button&gt;
+&lt;label&gt;
+  Your Country of Origin:
+  &lt;input type=&quot;text&quot; id=&quot;country&quot; placeholder=&quot;What country are you from?&quot;&gt;
+&lt;/label&gt;
+
+&lt;label&gt;
+  Your Irish Speaking Level:
+  &lt;input type=&quot;text&quot; id=&quot;irish&quot; placeholder=&quot;Do you speak Irish?&quot;&gt;
+&lt;/label&gt;
+
+&lt;h2&gt;Dé Céadaoine&lt;/h2&gt;
+
+&lt;button onclick=&quot;startRecording(&#39;audio&#39;)&quot;&gt;Start Recording&lt;/button&gt;
 &lt;button onclick=&quot;stopRecording()&quot;&gt;Stop&lt;/button&gt;
 
 &lt;p id=&quot;status&quot;&gt;&lt;/p&gt;
@@ -614,24 +767,35 @@ Amen.
 &lt;div id=&quot;controls&quot; style=&quot;display:none; margin-top:10px;&quot;&gt;
   &lt;button id=&quot;uploadBtn&quot; onclick=&quot;uploadRecording()&quot; disabled&gt;Upload&lt;/button&gt;
   &lt;button onclick=&quot;reRecord()&quot;&gt;Re-record&lt;/button&gt;
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="12" name="Thursday" tags="days regular" position="1850,275" size="100,100">(set: $currentPassage to &quot;Thursday&quot;)
-{&lt;h1&gt;Thursday - Déardaoin&lt;/h1&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="12" name="Thursday" tags="days regular" position="1675,150" size="100,100">(set: $currentPassage to &quot;Thursday&quot;)
+&lt;h1&gt;Thursday - Déardaoin&lt;/h1&gt;
 
 &lt;audio id=&quot;audioClip&quot; preload=&quot;auto&quot; controls&gt;
 &lt;source src=&quot;https://digital-repository-of-ireland.github.io/SpeakLikeMe/Thursdays.mp3&quot;&gt;
 &lt;/audio&gt;
 
-&lt;h2&gt;Déardaoin&lt;/h2&gt;
+&lt;p&gt;If you wish to contribute your recording to the DRI&#39;s Speak Like Me Collection please use the &quot;Upload&quot; button below. Contributions will be archived in the Digital Repository of Ireland under a Creative Commons CC BY 4.0 Attribution licence. They will be made available to the public.&lt;/p&gt;
 
-&lt;p&gt;If you wish to contribute your recording to the DRI&#39;s Speak Like Me Collection please use the &quot;Upload&quot; button below. Contributions will be archived in the Digital Repository of Ireland under a ??? licence. They will be made available to the public. If you enter your name you will be listed as the creator of the digital object.&lt;/p&gt;
-}
+&lt;p&gt;If you enter your name you will be listed as the creator of the digital object.&lt;/p&gt;
 
 &lt;label&gt;
   Your name:
   &lt;input type=&quot;text&quot; id=&quot;username&quot; placeholder=&quot;Enter your name&quot;&gt;
 &lt;/label&gt;
 
-&lt;button onclick=&quot;startRecording(&#39;audio&#39;)&quot;&gt;Start Audio&lt;/button&gt;
+&lt;label&gt;
+  Your Country of Origin:
+  &lt;input type=&quot;text&quot; id=&quot;country&quot; placeholder=&quot;What country are you from?&quot;&gt;
+&lt;/label&gt;
+
+&lt;label&gt;
+  Your Irish Speaking Level:
+  &lt;input type=&quot;text&quot; id=&quot;irish&quot; placeholder=&quot;Do you speak Irish?&quot;&gt;
+&lt;/label&gt;
+
+&lt;h2&gt;Déardaoin&lt;/h2&gt;
+
+&lt;button onclick=&quot;startRecording(&#39;audio&#39;)&quot;&gt;Start Recording&lt;/button&gt;
 &lt;button onclick=&quot;stopRecording()&quot;&gt;Stop&lt;/button&gt;
 
 &lt;p id=&quot;status&quot;&gt;&lt;/p&gt;
@@ -641,23 +805,35 @@ Amen.
 &lt;div id=&quot;controls&quot; style=&quot;display:none; margin-top:10px;&quot;&gt;
   &lt;button id=&quot;uploadBtn&quot; onclick=&quot;uploadRecording()&quot; disabled&gt;Upload&lt;/button&gt;
   &lt;button onclick=&quot;reRecord()&quot;&gt;Re-record&lt;/button&gt;
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="13" name="Friday" tags="days regular" position="1925,375" size="100,100">(set: $currentPassage to &quot;Friday&quot;)
-{&lt;h1&gt;Friday -  Dé hAoine&lt;/h1&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="13" name="Friday" tags="days regular" position="1600,250" size="100,100">(set: $currentPassage to &quot;Friday&quot;)
+&lt;h1&gt;Friday -  Dé hAoine&lt;/h1&gt;
 
 &lt;audio id=&quot;audioClip&quot; preload=&quot;auto&quot; controls&gt;
 &lt;source src=&quot;https://digital-repository-of-ireland.github.io/SpeakLikeMe/Fridays.mp3&quot;&gt;
 &lt;/audio&gt;
 
-&lt;h2&gt;Dé hAoine&lt;/h2&gt;
+&lt;p&gt;If you wish to contribute your recording to the DRI&#39;s Speak Like Me Collection please use the &quot;Upload&quot; button below. Contributions will be archived in the Digital Repository of Ireland under a Creative Commons CC BY 4.0 Attribution licence. They will be made available to the public.&lt;/p&gt;
 
-&lt;p&gt;If you wish to contribute your recording to the DRI&#39;s Speak Like Me Collection please use the &quot;Upload&quot; button below. Contributions will be archived in the Digital Repository of Ireland under a ??? licence. They will be made available to the public. If you enter your name you will be listed as the creator of the digital object.&lt;/p&gt;
-}
+&lt;p&gt;If you enter your name you will be listed as the creator of the digital object.&lt;/p&gt;
+
 &lt;label&gt;
   Your name:
   &lt;input type=&quot;text&quot; id=&quot;username&quot; placeholder=&quot;Enter your name&quot;&gt;
 &lt;/label&gt;
 
-&lt;button onclick=&quot;startRecording(&#39;audio&#39;)&quot;&gt;Start Audio&lt;/button&gt;
+&lt;label&gt;
+  Your Country of Origin:
+  &lt;input type=&quot;text&quot; id=&quot;country&quot; placeholder=&quot;What country are you from?&quot;&gt;
+&lt;/label&gt;
+
+&lt;label&gt;
+  Your Irish Speaking Level:
+  &lt;input type=&quot;text&quot; id=&quot;irish&quot; placeholder=&quot;Do you speak Irish?&quot;&gt;
+&lt;/label&gt;
+
+&lt;h2&gt;Dé hAoine&lt;/h2&gt;
+
+&lt;button onclick=&quot;startRecording(&#39;audio&#39;)&quot;&gt;Start Recording&lt;/button&gt;
 &lt;button onclick=&quot;stopRecording()&quot;&gt;Stop&lt;/button&gt;
 
 &lt;p id=&quot;status&quot;&gt;&lt;/p&gt;
@@ -667,23 +843,35 @@ Amen.
 &lt;div id=&quot;controls&quot; style=&quot;display:none; margin-top:10px;&quot;&gt;
   &lt;button id=&quot;uploadBtn&quot; onclick=&quot;uploadRecording()&quot; disabled&gt;Upload&lt;/button&gt;
   &lt;button onclick=&quot;reRecord()&quot;&gt;Re-record&lt;/button&gt;
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="14" name="Saturday" tags="days regular" position="1800,450" size="100,100">(set: $currentPassage to &quot;Saturday&quot;)
-{&lt;h1&gt;Saturday -  Dé Sathairn&lt;/h1&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="14" name="Saturday" tags="days regular" position="1525,375" size="100,100">(set: $currentPassage to &quot;Saturday&quot;)
+&lt;h1&gt;Saturday -  Dé Sathairn&lt;/h1&gt;
 
 &lt;audio id=&quot;audioClip&quot; preload=&quot;auto&quot; controls&gt;
 &lt;source src=&quot;https://digital-repository-of-ireland.github.io/SpeakLikeMe/Saturdays.mp3&quot;&gt;
 &lt;/audio&gt;
 
-&lt;h2&gt;Dé Sathairn&lt;/h2&gt;
+&lt;p&gt;If you wish to contribute your recording to the DRI&#39;s Speak Like Me Collection please use the &quot;Upload&quot; button below. Contributions will be archived in the Digital Repository of Ireland under a Creative Commons CC BY 4.0 Attribution licence. They will be made available to the public.&lt;/p&gt;
 
-&lt;p&gt;If you wish to contribute your recording to the DRI&#39;s Speak Like Me Collection please use the &quot;Upload&quot; button below. Contributions will be archived in the Digital Repository of Ireland under a ??? licence. They will be made available to the public. If you enter your name you will be listed as the creator of the digital object.&lt;/p&gt;
-}
+&lt;p&gt;If you enter your name you will be listed as the creator of the digital object.&lt;/p&gt;
+
 &lt;label&gt;
   Your name:
   &lt;input type=&quot;text&quot; id=&quot;username&quot; placeholder=&quot;Enter your name&quot;&gt;
 &lt;/label&gt;
 
-&lt;button onclick=&quot;startRecording(&#39;audio&#39;)&quot;&gt;Start Audio&lt;/button&gt;
+&lt;label&gt;
+  Your Country of Origin:
+  &lt;input type=&quot;text&quot; id=&quot;country&quot; placeholder=&quot;What country are you from?&quot;&gt;
+&lt;/label&gt;
+
+&lt;label&gt;
+  Your Irish Speaking Level:
+  &lt;input type=&quot;text&quot; id=&quot;irish&quot; placeholder=&quot;Do you speak Irish?&quot;&gt;
+&lt;/label&gt;
+
+&lt;h2&gt;Dé Sathairn&lt;/h2&gt;
+
+&lt;button onclick=&quot;startRecording(&#39;audio&#39;)&quot;&gt;Start Recording&lt;/button&gt;
 &lt;button onclick=&quot;stopRecording()&quot;&gt;Stop&lt;/button&gt;
 
 &lt;p id=&quot;status&quot;&gt;&lt;/p&gt;
@@ -693,23 +881,35 @@ Amen.
 &lt;div id=&quot;controls&quot; style=&quot;display:none; margin-top:10px;&quot;&gt;
   &lt;button id=&quot;uploadBtn&quot; onclick=&quot;uploadRecording()&quot; disabled&gt;Upload&lt;/button&gt;
   &lt;button onclick=&quot;reRecord()&quot;&gt;Re-record&lt;/button&gt;
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="15" name="Sunday" tags="days regular" position="1750,550" size="100,100">(set: $currentPassage to &quot;Sunday&quot;)
-{&lt;h1&gt;Sunday -  Dé Domhnaigh&lt;/h1&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="15" name="Sunday" tags="days regular" position="1375,375" size="100,100">(set: $currentPassage to &quot;Sunday&quot;)
+&lt;h1&gt;Sunday -  Dé Domhnaigh&lt;/h1&gt;
 
 &lt;audio id=&quot;audioClip&quot; preload=&quot;auto&quot; controls&gt;
 &lt;source src=&quot;https://digital-repository-of-ireland.github.io/SpeakLikeMe/Sundays.mp3&quot;&gt;
 &lt;/audio&gt;
 
-&lt;h2&gt;Dé Domhnaigh&lt;/h2&gt;
+&lt;p&gt;If you wish to contribute your recording to the DRI&#39;s Speak Like Me Collection please use the &quot;Upload&quot; button below. Contributions will be archived in the Digital Repository of Ireland under a Creative Commons CC BY 4.0 Attribution licence. They will be made available to the public.&lt;/p&gt;
 
-&lt;p&gt;If you wish to contribute your recording to the DRI&#39;s Speak Like Me Collection please use the &quot;Upload&quot; button below. Contributions will be archived in the Digital Repository of Ireland under a ??? licence. They will be made available to the public. If you enter your name you will be listed as the creator of the digital object.&lt;/p&gt;
-}
+&lt;p&gt;If you enter your name you will be listed as the creator of the digital object.&lt;/p&gt;
+
 &lt;label&gt;
   Your name:
   &lt;input type=&quot;text&quot; id=&quot;username&quot; placeholder=&quot;Enter your name&quot;&gt;
 &lt;/label&gt;
 
-&lt;button onclick=&quot;startRecording(&#39;audio&#39;)&quot;&gt;Start Audio&lt;/button&gt;
+&lt;label&gt;
+  Your Country of Origin:
+  &lt;input type=&quot;text&quot; id=&quot;country&quot; placeholder=&quot;What country are you from?&quot;&gt;
+&lt;/label&gt;
+
+&lt;label&gt;
+  Your Irish Speaking Level:
+  &lt;input type=&quot;text&quot; id=&quot;irish&quot; placeholder=&quot;Do you speak Irish?&quot;&gt;
+&lt;/label&gt;
+
+&lt;h2&gt;Dé Domhnaigh&lt;/h2&gt;
+
+&lt;button onclick=&quot;startRecording(&#39;audio&#39;)&quot;&gt;Start Recording&lt;/button&gt;
 &lt;button onclick=&quot;stopRecording()&quot;&gt;Stop&lt;/button&gt;
 
 &lt;p id=&quot;status&quot;&gt;&lt;/p&gt;
@@ -719,21 +919,24 @@ Amen.
 &lt;div id=&quot;controls&quot; style=&quot;display:none; margin-top:10px;&quot;&gt;
   &lt;button id=&quot;uploadBtn&quot; onclick=&quot;uploadRecording()&quot; disabled&gt;Upload&lt;/button&gt;
   &lt;button onclick=&quot;reRecord()&quot;&gt;Re-record&lt;/button&gt;
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="16" name="placenames" tags="placenames regular" position="875,625" size="100,100">&lt;h1&gt;Irish Placenames&lt;/h1&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="16" name="placenames" tags="placenames regular" position="750,700" size="100,100">Link from main page
+[[Irish Placenames|placenames]]  [(text-colour:black)+(bg:orange)[  &lt;b&gt;Easy!  ★☆☆&lt;/b&gt;  ]]
+
+&lt;p&gt;WORK IN PROGRESS&lt;/p&gt;
+&lt;h1&gt;Irish Placenames&lt;/h1&gt;
 &lt;p&gt;lorem ipsum or something&lt;/p&gt;
 
 
-&lt;p&gt;The background image on each of these pages is Technological University of the Shannon &amp;#91;Depositor&amp;#93;. Map of location and approximate extent of Pat O&#39;Carroll site on Shannon. Shannon Free Airport Development Company. . Image &amp;#91;Type&amp;#93;. Digital Repository of Ireland (2025) &amp;#91;Publisher&amp;#93. https://doi.org/10.7486/DRI.n584bw60x&lt;/p&gt;</tw-passagedata><tw-passagedata pid="17" name="counting" tags="counting regular" position="700,600" size="100,100">&lt;h1&gt;Counting in Irish&lt;/h1&gt;
-&lt;p&gt;Tionscadal Gréasáin Cheirníní Doegen, The Doegen Records Web Project is an archive of Irish dialect sound recordings made during 1928-31. It contains folktales, songs and other material recited by native Irish speakers from 17 counties. Crucially, it includes examples of dialects that are now extinct.&lt;/p&gt;
+&lt;p&gt;The background image on each of these pages is Technological University of the Shannon &amp;#91;Depositor&amp;#93;. Map of location and approximate extent of Pat O&#39;Carroll site on Shannon. Shannon Free Airport Development Company. . Image &amp;#91;Type&amp;#93;. Digital Repository of Ireland (2025) &amp;#91;Publisher&amp;#93. &lt;a href=&quot;https://doi.org/10.7486/DRI.n584bw60x&quot; target=&quot;_blank&quot;&gt;https://doi.org/10.7486/DRI.n584bw60x&lt;/a&gt;&lt;/p&gt;</tw-passagedata><tw-passagedata pid="17" name="counting" tags="counting regular" position="525,525" size="100,100">&lt;h1&gt;Counting in Irish&lt;/h1&gt;
 
-&lt;p&gt;Dr Wilhelm Doegen (1877-1967) was Director of the Lautabteilung, Preussische Staatsbibliothek (the Sound Department at the Prussian State Library), Berlin.&lt;/p&gt;
+&lt;p&gt;On this page you will hear a recitation of numbers by Mícheál Turraoin from Co. Waterford. It was recorded primarily for phonetic purposes. It is one of 30 such items in the Doegen collection. You are invited to copy it and record yourself counting from one to ten in Irish, in your own voice.&lt;/p&gt;
+
+&lt;p&gt;This recording comes from the Tionscadal Gréasáin Cheirníní Doegen, The Doegen Records Web Project, wich is an archive of Irish dialect sound recordings made during 1928-31. It contains folktales, songs and other material recited by native Irish speakers from 17 counties. Crucially, it includes examples of dialects that are now extinct.&lt;/p&gt;
 
 &lt;p&gt;In 1926 the Irish government asked Dr Doegen to make recordings of Irish speech in the Gaeltacht and in areas of the country where Irish had suffered decline. The Department of Education asked the Royal Irish Academy if it would organize such a scheme (Survey of Dialects) and the Academy’s Irish Studies Committee undertook the task. The recordings were made by Dr Doegen and his assistant Karl Tempel between 1928 and 1931.&lt;/p&gt;
 
-&lt;p&gt;This item, a recitation of numbers by Mícheál Turraoin from Co. Waterford, was recorded primarily for phonetic purposes. It is one of 30 such items in the Doegen collection.&lt;/p&gt;
-
 &#39;&#39;Source:&#39;&#39;
-&lt;p&gt;Royal Irish Academy &amp;#91;Depositor&amp;#93;. Uimhreacha.Numbers. Dr Wilhelm Doegen. (1928-09-05). Sound &amp;#91;Type&amp;#93;. Digital Repository of Ireland (2022) &amp;#91;Publisher&amp;#93;. https://doi.org/10.7486/DRI.ww72r097k&lt;/p&gt;
+&lt;p&gt;Royal Irish Academy &amp;#91;Depositor&amp;#93;. Uimhreacha.Numbers. Dr Wilhelm Doegen. (1928-09-05). Sound &amp;#91;Type&amp;#93;. Digital Repository of Ireland (2022) &amp;#91;Publisher&amp;#93;. &lt;a href=&quot;https://doi.org/10.7486/DRI.ww72r097k&quot; target=&quot;_blank&quot;&gt;https://doi.org/10.7486/DRI.ww72r097k&lt;/a&gt;&lt;/p&gt;
 
 &lt;audio id=&quot;audioClip&quot; preload=&quot;auto&quot; controls&gt;
 &lt;source src=&quot;https://digital-repository-of-ireland.github.io/SpeakLikeMe/numbers.mp3&quot;&gt;
@@ -741,7 +944,335 @@ Amen.
 
 [[Let me try!|record1to10]]
 
-&lt;p&gt;The background image on this page is Digital Repository of Ireland &amp;#91;Depositor&amp;#93;. Pocket watch Hopkins &amp; Hopkins. Hopkins and Hopkins. (ca. 1916). Image &amp;#91;Type&amp;#93;. Digital Repository of Ireland (2016) &amp;#91;Publisher&amp;#93;. https://doi.org/10.7486/DRI.vx02dv70x&lt;/p&gt;</tw-passagedata></tw-storydata>
+&lt;p&gt;The background image on this page is The Discovery Programme &amp;#91;Depositor&amp;#93;. Plan orthoimage of a point cloud of Martello tower no. 9 (SMR No.: DU023-029009-), Dalkey Island, County Dublin. The terrestrial laser scanning data was captured on 04/04/2022.. The Discovery Programme, CHERISH Project. (04/04/2022). Image &amp;#91;Type&amp;#93;. Digital Repository of Ireland (2025) &amp;#91;Publisher&amp;#93;. &lt;a href=&quot;https://doi.org/10.7486/DRI.ww72rd220&quot; target=&quot;_blank&quot;&gt;https://doi.org/10.7486/DRI.ww72rd220&lt;/a&gt;&lt;/p&gt;
+</tw-passagedata><tw-passagedata pid="18" name="digipresterms" tags="teármaíocht regular" position="1075,725" size="100,100">&lt;h1&gt;Digital Preservation Terms&lt;/h1&gt;
+
+&lt;p&gt;On the following pages you will hear a variety of useful Digital Preservation Terms from the ??? collection. You are invited to copy them and record these terms in your own voice.&lt;/p&gt;
+
+&lt;p&gt;This work builds on a project by the DRI and Dublin City University to create a standardised set of Irish language terms relating to digital preservation. The list was published in May 2025 as the &quot;Téarmaíocht an Bhuanchoimeádta Dhigitigh:  Gluais Ghaeilge do thaisclanna agus do chartlannaithe&quot;, or  &quot;Digital Preservation Terminology: An Irish language glossary for repositories and archivists&quot;.&lt;/p&gt;
+
+&lt;p&gt;In 2026, reference recordings of the terms were made by Niamh Ní Charra, forming the ??? collection. A selection of these recordings are listed below.&lt;/p&gt;
+
+[[Digital Preservation]]
+[[Born-Digital Record]]
+[[Community Archive]]
+[[Descriptive Metadata]]
+[[Long-term Preservation]]
+[[Persistent Identifier]]
+[[Reuse Licence]]
+[[Web Archiving]]
+
+&#39;&#39;Source:&#39;&#39;
+&lt;p&gt;The full terminology can be found as a PDF: Digital Repository of Ireland &amp;#91;Depositor&amp;#93;.. Téarmaíocht an Bhuanchoimeádta Dhigitigh:  Gluais Ghaeilge do thaisclanna agus do chartlannaithe .Digital Preservation Terminology: An Irish language glossary for repositories and archivists. Digital Repository of Ireland, DCU. (2025). Text &amp;#91;Type&amp;#93;. Digital Repository of Ireland (2025) &amp;#91;Publisher&amp;#93;. &lt;a href=&quot;https://doi.org/10.7486/DRI.cr572260k&quot; target=&quot;_blank&quot;&gt;https://doi.org/10.7486/DRI.cr572260k&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;The collection of audio recordings are available at &lt;/p&gt;
+
+&lt;p&gt;The background image on each of these pages is An Post Museum and Archive &amp;#91;Depositor&amp;#93;. Irish Animals and Marine Life. An Post. (2011). Image &amp;#91;Type&amp;#93;. Digital Repository of Ireland (2021) &amp;#91;Publisher&amp;#93;. &lt;a href=&quot;https://doi.org/10.7486/DRI.mw237w14z&quot;&gt;https://doi.org/10.7486/DRI.mw237w14z&lt;/a&gt;&lt;/p&gt;
+</tw-passagedata><tw-passagedata pid="19" name="Digital Preservation" tags="teármaíocht regular" position="1400,1125" size="100,100">(set: $currentPassage to &quot;digitalpreservation&quot;)
+&lt;h1&gt;Digital Preservation - Buanchoimeád Digiteach&lt;/h1&gt;
+
+&lt;audio id=&quot;audioClip&quot; preload=&quot;auto&quot; controls&gt;
+&lt;source src=&quot;&quot;&gt;
+&lt;/audio&gt;
+
+&lt;p&gt;If you wish to contribute your recording to the DRI&#39;s Speak Like Me Collection please use the &quot;Upload&quot; button below. Contributions will be archived in the Digital Repository of Ireland under a Creative Commons CC BY 4.0 Attribution licence. They will be made available to the public.&lt;/p&gt;
+
+&lt;p&gt;If you enter your name you will be listed as the creator of the digital object.&lt;/p&gt;
+
+&lt;label&gt;
+  Your name:
+  &lt;input type=&quot;text&quot; id=&quot;username&quot; placeholder=&quot;Enter your name&quot;&gt;
+&lt;/label&gt;
+
+&lt;label&gt;
+  Your Country of Origin:
+  &lt;input type=&quot;text&quot; id=&quot;country&quot; placeholder=&quot;What country are you from?&quot;&gt;
+&lt;/label&gt;
+
+&lt;label&gt;
+  Your Irish Speaking Level:
+  &lt;input type=&quot;text&quot; id=&quot;irish&quot; placeholder=&quot;Do you speak Irish?&quot;&gt;
+&lt;/label&gt;
+
+&lt;h2&gt;Buanchoimeád Digiteach&lt;/h2&gt;
+
+&lt;button onclick=&quot;startRecording(&#39;audio&#39;)&quot;&gt;Start Recording&lt;/button&gt;
+&lt;button onclick=&quot;stopRecording()&quot;&gt;Stop&lt;/button&gt;
+
+&lt;p id=&quot;status&quot;&gt;&lt;/p&gt;
+
+&lt;div id=&quot;preview&quot;&gt;&lt;/div&gt;
+
+&lt;div id=&quot;controls&quot; style=&quot;display:none; margin-top:10px;&quot;&gt;
+  &lt;button id=&quot;uploadBtn&quot; onclick=&quot;uploadRecording()&quot; disabled&gt;Upload&lt;/button&gt;
+  &lt;button onclick=&quot;reRecord()&quot;&gt;Re-record&lt;/button&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="20" name="Born-Digital Record" tags="regular teármaíocht" position="1500,750" size="100,100">(set: $currentPassage to &quot;borndigital&quot;)
+&lt;h1&gt;Born-Digital Record - Taifead Digitghinte&lt;/h1&gt;
+
+&lt;audio id=&quot;audioClip&quot; preload=&quot;auto&quot; controls&gt;
+&lt;source src=&quot;&quot;&gt;
+&lt;/audio&gt;
+
+&lt;p&gt;If you wish to contribute your recording to the DRI&#39;s Speak Like Me Collection please use the &quot;Upload&quot; button below. Contributions will be archived in the Digital Repository of Ireland under a Creative Commons CC BY 4.0 Attribution licence. They will be made available to the public.&lt;/p&gt;
+
+&lt;p&gt;If you enter your name you will be listed as the creator of the digital object.&lt;/p&gt;
+
+&lt;label&gt;
+  Your name:
+  &lt;input type=&quot;text&quot; id=&quot;username&quot; placeholder=&quot;Enter your name&quot;&gt;
+&lt;/label&gt;
+
+&lt;label&gt;
+  Your Country of Origin:
+  &lt;input type=&quot;text&quot; id=&quot;country&quot; placeholder=&quot;What country are you from?&quot;&gt;
+&lt;/label&gt;
+
+&lt;label&gt;
+  Your Irish Speaking Level:
+  &lt;input type=&quot;text&quot; id=&quot;irish&quot; placeholder=&quot;Do you speak Irish?&quot;&gt;
+&lt;/label&gt;
+
+&lt;h2&gt;Taifead Digitghinte&lt;/h2&gt;
+
+&lt;button onclick=&quot;startRecording(&#39;audio&#39;)&quot;&gt;Start Recording&lt;/button&gt;
+&lt;button onclick=&quot;stopRecording()&quot;&gt;Stop&lt;/button&gt;
+
+&lt;p id=&quot;status&quot;&gt;&lt;/p&gt;
+
+&lt;div id=&quot;preview&quot;&gt;&lt;/div&gt;
+
+&lt;div id=&quot;controls&quot; style=&quot;display:none; margin-top:10px;&quot;&gt;
+  &lt;button id=&quot;uploadBtn&quot; onclick=&quot;uploadRecording()&quot; disabled&gt;Upload&lt;/button&gt;
+  &lt;button onclick=&quot;reRecord()&quot;&gt;Re-record&lt;/button&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="21" name="Community Archive" tags="regular teármaíocht" position="1025,950" size="100,100">(set: $currentPassage to &quot;communityarchive&quot;)
+&lt;h1&gt;Community Archive - Cartlann Phobail&lt;/h1&gt;
+
+&lt;audio id=&quot;audioClip&quot; preload=&quot;auto&quot; controls&gt;
+&lt;source src=&quot;&quot;&gt;
+&lt;/audio&gt;
+
+&lt;p&gt;If you wish to contribute your recording to the DRI&#39;s Speak Like Me Collection please use the &quot;Upload&quot; button below. Contributions will be archived in the Digital Repository of Ireland under a Creative Commons CC BY 4.0 Attribution licence. They will be made available to the public.&lt;/p&gt;
+
+&lt;p&gt;If you enter your name you will be listed as the creator of the digital object.&lt;/p&gt;
+
+&lt;label&gt;
+  Your name:
+  &lt;input type=&quot;text&quot; id=&quot;username&quot; placeholder=&quot;Enter your name&quot;&gt;
+&lt;/label&gt;
+
+&lt;label&gt;
+  Your Country of Origin:
+  &lt;input type=&quot;text&quot; id=&quot;country&quot; placeholder=&quot;What country are you from?&quot;&gt;
+&lt;/label&gt;
+
+&lt;label&gt;
+  Your Irish Speaking Level:
+  &lt;input type=&quot;text&quot; id=&quot;irish&quot; placeholder=&quot;Do you speak Irish?&quot;&gt;
+&lt;/label&gt;
+
+&lt;h2&gt;Cartlann Phobail&lt;/h2&gt;
+
+&lt;button onclick=&quot;startRecording(&#39;audio&#39;)&quot;&gt;Start Recording&lt;/button&gt;
+&lt;button onclick=&quot;stopRecording()&quot;&gt;Stop&lt;/button&gt;
+
+&lt;p id=&quot;status&quot;&gt;&lt;/p&gt;
+
+&lt;div id=&quot;preview&quot;&gt;&lt;/div&gt;
+
+&lt;div id=&quot;controls&quot; style=&quot;display:none; margin-top:10px;&quot;&gt;
+  &lt;button id=&quot;uploadBtn&quot; onclick=&quot;uploadRecording()&quot; disabled&gt;Upload&lt;/button&gt;
+  &lt;button onclick=&quot;reRecord()&quot;&gt;Re-record&lt;/button&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="22" name="Descriptive Metadata" tags="regular teármaíocht" position="1275,1075" size="100,100">(set: $currentPassage to &quot;desriptivemetadata&quot;)
+&lt;h1&gt;Descriptive Metadata - Meiteashonraí Tuairisciúla&lt;/h1&gt;
+
+&lt;audio id=&quot;audioClip&quot; preload=&quot;auto&quot; controls&gt;
+&lt;source src=&quot;&quot;&gt;
+&lt;/audio&gt;
+
+&lt;p&gt;If you wish to contribute your recording to the DRI&#39;s Speak Like Me Collection please use the &quot;Upload&quot; button below. Contributions will be archived in the Digital Repository of Ireland under a Creative Commons CC BY 4.0 Attribution licence. They will be made available to the public.&lt;/p&gt;
+
+&lt;p&gt;If you enter your name you will be listed as the creator of the digital object.&lt;/p&gt;
+
+&lt;label&gt;
+  Your name:
+  &lt;input type=&quot;text&quot; id=&quot;username&quot; placeholder=&quot;Enter your name&quot;&gt;
+&lt;/label&gt;
+
+&lt;label&gt;
+  Your Country of Origin:
+  &lt;input type=&quot;text&quot; id=&quot;country&quot; placeholder=&quot;What country are you from?&quot;&gt;
+&lt;/label&gt;
+
+&lt;label&gt;
+  Your Irish Speaking Level:
+  &lt;input type=&quot;text&quot; id=&quot;irish&quot; placeholder=&quot;Do you speak Irish?&quot;&gt;
+&lt;/label&gt;
+
+&lt;h2&gt;Meiteashonraí Tuairisciúla&lt;/h2&gt;
+
+&lt;button onclick=&quot;startRecording(&#39;audio&#39;)&quot;&gt;Start Recording&lt;/button&gt;
+&lt;button onclick=&quot;stopRecording()&quot;&gt;Stop&lt;/button&gt;
+
+&lt;p id=&quot;status&quot;&gt;&lt;/p&gt;
+
+&lt;div id=&quot;preview&quot;&gt;&lt;/div&gt;
+
+&lt;div id=&quot;controls&quot; style=&quot;display:none; margin-top:10px;&quot;&gt;
+  &lt;button id=&quot;uploadBtn&quot; onclick=&quot;uploadRecording()&quot; disabled&gt;Upload&lt;/button&gt;
+  &lt;button onclick=&quot;reRecord()&quot;&gt;Re-record&lt;/button&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="23" name="Long-term Preservation" tags="regular teármaíocht" position="1575,875" size="100,100">(set: $currentPassage to &quot;longterm&quot;)
+&lt;h1&gt;Long-term Preservation - Buanchoimeád Fadtéarmach&lt;/h1&gt;
+
+&lt;audio id=&quot;audioClip&quot; preload=&quot;auto&quot; controls&gt;
+&lt;source src=&quot;&quot;&gt;
+&lt;/audio&gt;
+
+&lt;p&gt;If you wish to contribute your recording to the DRI&#39;s Speak Like Me Collection please use the &quot;Upload&quot; button below. Contributions will be archived in the Digital Repository of Ireland under a Creative Commons CC BY 4.0 Attribution licence. They will be made available to the public.&lt;/p&gt;
+
+&lt;p&gt;If you enter your name you will be listed as the creator of the digital object.&lt;/p&gt;
+
+&lt;label&gt;
+  Your name:
+  &lt;input type=&quot;text&quot; id=&quot;username&quot; placeholder=&quot;Enter your name&quot;&gt;
+&lt;/label&gt;
+
+&lt;label&gt;
+  Your Country of Origin:
+  &lt;input type=&quot;text&quot; id=&quot;country&quot; placeholder=&quot;What country are you from?&quot;&gt;
+&lt;/label&gt;
+
+&lt;label&gt;
+  Your Irish Speaking Level:
+  &lt;input type=&quot;text&quot; id=&quot;irish&quot; placeholder=&quot;Do you speak Irish?&quot;&gt;
+&lt;/label&gt;
+
+&lt;h2&gt;Buanchoimeád Fadtéarmach&lt;/h2&gt;
+
+&lt;button onclick=&quot;startRecording(&#39;audio&#39;)&quot;&gt;Start Recording&lt;/button&gt;
+&lt;button onclick=&quot;stopRecording()&quot;&gt;Stop&lt;/button&gt;
+
+&lt;p id=&quot;status&quot;&gt;&lt;/p&gt;
+
+&lt;div id=&quot;preview&quot;&gt;&lt;/div&gt;
+
+&lt;div id=&quot;controls&quot; style=&quot;display:none; margin-top:10px;&quot;&gt;
+  &lt;button id=&quot;uploadBtn&quot; onclick=&quot;uploadRecording()&quot; disabled&gt;Upload&lt;/button&gt;
+  &lt;button onclick=&quot;reRecord()&quot;&gt;Re-record&lt;/button&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="24" name="Persistent Identifier" tags="regular teármaíocht" position="1150,1000" size="100,100">(set: $currentPassage to &quot;pid&quot;)
+&lt;h1&gt;Persistent Identifier - Aitheantóir Seasmhach&lt;/h1&gt;
+
+&lt;audio id=&quot;audioClip&quot; preload=&quot;auto&quot; controls&gt;
+&lt;source src=&quot;&quot;&gt;
+&lt;/audio&gt;
+
+&lt;p&gt;If you wish to contribute your recording to the DRI&#39;s Speak Like Me Collection please use the &quot;Upload&quot; button below. Contributions will be archived in the Digital Repository of Ireland under a Creative Commons CC BY 4.0 Attribution licence. They will be made available to the public.&lt;/p&gt;
+
+&lt;p&gt;If you enter your name you will be listed as the creator of the digital object.&lt;/p&gt;
+
+&lt;label&gt;
+  Your name:
+  &lt;input type=&quot;text&quot; id=&quot;username&quot; placeholder=&quot;Enter your name&quot;&gt;
+&lt;/label&gt;
+
+&lt;label&gt;
+  Your Country of Origin:
+  &lt;input type=&quot;text&quot; id=&quot;country&quot; placeholder=&quot;What country are you from?&quot;&gt;
+&lt;/label&gt;
+
+&lt;label&gt;
+  Your Irish Speaking Level:
+  &lt;input type=&quot;text&quot; id=&quot;irish&quot; placeholder=&quot;Do you speak Irish?&quot;&gt;
+&lt;/label&gt;
+
+&lt;h2&gt;Aitheantóir Seasmhach&lt;/h2&gt;
+
+&lt;button onclick=&quot;startRecording(&#39;audio&#39;)&quot;&gt;Start Recording&lt;/button&gt;
+&lt;button onclick=&quot;stopRecording()&quot;&gt;Stop&lt;/button&gt;
+
+&lt;p id=&quot;status&quot;&gt;&lt;/p&gt;
+
+&lt;div id=&quot;preview&quot;&gt;&lt;/div&gt;
+
+&lt;div id=&quot;controls&quot; style=&quot;display:none; margin-top:10px;&quot;&gt;
+  &lt;button id=&quot;uploadBtn&quot; onclick=&quot;uploadRecording()&quot; disabled&gt;Upload&lt;/button&gt;
+  &lt;button onclick=&quot;reRecord()&quot;&gt;Re-record&lt;/button&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="25" name="Reuse Licence" tags="regular teármaíocht" position="1525,1100" size="100,100">(set: $currentPassage to &quot;reuselicence&quot;)
+&lt;h1&gt;Reuse Licence - Ceadúnas Athúsáide&lt;/h1&gt;
+
+&lt;audio id=&quot;audioClip&quot; preload=&quot;auto&quot; controls&gt;
+&lt;source src=&quot;&quot;&gt;
+&lt;/audio&gt;
+
+&lt;p&gt;If you wish to contribute your recording to the DRI&#39;s Speak Like Me Collection please use the &quot;Upload&quot; button below. Contributions will be archived in the Digital Repository of Ireland under a Creative Commons CC BY 4.0 Attribution licence. They will be made available to the public.&lt;/p&gt;
+
+&lt;p&gt;If you enter your name you will be listed as the creator of the digital object.&lt;/p&gt;
+
+&lt;label&gt;
+  Your name:
+  &lt;input type=&quot;text&quot; id=&quot;username&quot; placeholder=&quot;Enter your name&quot;&gt;
+&lt;/label&gt;
+
+&lt;label&gt;
+  Your Country of Origin:
+  &lt;input type=&quot;text&quot; id=&quot;country&quot; placeholder=&quot;What country are you from?&quot;&gt;
+&lt;/label&gt;
+
+&lt;label&gt;
+  Your Irish Speaking Level:
+  &lt;input type=&quot;text&quot; id=&quot;irish&quot; placeholder=&quot;Do you speak Irish?&quot;&gt;
+&lt;/label&gt;
+
+&lt;h2&gt;Ceadúnas Athúsáide&lt;/h2&gt;
+
+&lt;button onclick=&quot;startRecording(&#39;audio&#39;)&quot;&gt;Start Recording&lt;/button&gt;
+&lt;button onclick=&quot;stopRecording()&quot;&gt;Stop&lt;/button&gt;
+
+&lt;p id=&quot;status&quot;&gt;&lt;/p&gt;
+
+&lt;div id=&quot;preview&quot;&gt;&lt;/div&gt;
+
+&lt;div id=&quot;controls&quot; style=&quot;display:none; margin-top:10px;&quot;&gt;
+  &lt;button id=&quot;uploadBtn&quot; onclick=&quot;uploadRecording()&quot; disabled&gt;Upload&lt;/button&gt;
+  &lt;button onclick=&quot;reRecord()&quot;&gt;Re-record&lt;/button&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="26" name="Web Archiving" tags="regular teármaíocht" position="1575,1000" size="100,100">(set: $currentPassage to &quot;webarchiving&quot;)
+&lt;h1&gt;Web Archiving - Cartlannú Gréasáin&lt;/h1&gt;
+
+&lt;audio id=&quot;audioClip&quot; preload=&quot;auto&quot; controls&gt;
+&lt;source src=&quot;&quot;&gt;
+&lt;/audio&gt;
+
+&lt;p&gt;If you wish to contribute your recording to the DRI&#39;s Speak Like Me Collection please use the &quot;Upload&quot; button below. Contributions will be archived in the Digital Repository of Ireland under a Creative Commons CC BY 4.0 Attribution licence. They will be made available to the public.&lt;/p&gt;
+
+&lt;p&gt;If you enter your name you will be listed as the creator of the digital object.&lt;/p&gt;
+
+&lt;label&gt;
+  Your name:
+  &lt;input type=&quot;text&quot; id=&quot;username&quot; placeholder=&quot;Enter your name&quot;&gt;
+&lt;/label&gt;
+
+&lt;label&gt;
+  Your Country of Origin:
+  &lt;input type=&quot;text&quot; id=&quot;country&quot; placeholder=&quot;What country are you from?&quot;&gt;
+&lt;/label&gt;
+
+&lt;label&gt;
+  Your Irish Speaking Level:
+  &lt;input type=&quot;text&quot; id=&quot;irish&quot; placeholder=&quot;Do you speak Irish?&quot;&gt;
+&lt;/label&gt;
+
+&lt;h2&gt;Cartlannú Gréasáin&lt;/h2&gt;
+
+&lt;button onclick=&quot;startRecording(&#39;audio&#39;)&quot;&gt;Start Recording&lt;/button&gt;
+&lt;button onclick=&quot;stopRecording()&quot;&gt;Stop&lt;/button&gt;
+
+&lt;p id=&quot;status&quot;&gt;&lt;/p&gt;
+
+&lt;div id=&quot;preview&quot;&gt;&lt;/div&gt;
+
+&lt;div id=&quot;controls&quot; style=&quot;display:none; margin-top:10px;&quot;&gt;
+  &lt;button id=&quot;uploadBtn&quot; onclick=&quot;uploadRecording()&quot; disabled&gt;Upload&lt;/button&gt;
+  &lt;button onclick=&quot;reRecord()&quot;&gt;Re-record&lt;/button&gt;
+&lt;/div&gt;</tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">(function(){"use strict";
 var require,define;!function(){var e={},r={};require=function(i){var n=e[i];return n&&(r[i]=n[1].apply(void 0,n[0].map(require)),e[i]=void 0),r[i]},(define=function(r,i,n){if("function"==typeof r)return r();e[r]=[i,n]}).amd=!0}();/*!
  * https://github.com/paulmillr/es6-shim
