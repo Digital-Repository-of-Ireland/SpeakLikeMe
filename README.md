@@ -10,11 +10,27 @@ Although the game largely uses objects directly from the Repository, some audio 
 
 The code for the game was created using Twine and written by DRI Staff, although some code snippets were created by AI tools. This is part of our ongoing work to explore legitimate uses for GenAI within the domain of archiving and repositories. You can find out more about how the DRI uses AI in our AI Statement [https://doi.org/10.7486/DRI.1c18th94h](https://doi.org/10.7486/DRI.1c18th94h).
 
-Creative Commons Attribution-NonCommercial 4.0 International License (Doegen)
-Creative Commons Attribution-NonCommercial 4.0 International License (ReWilding)
-Creative Commons Attribution 4.0 International License (ACCER)
-
+## Objects and collections used directly from the Repository in the game
 Arts and Culture in Education Research Repository [Depositor]. 10. Amhrán: Neansín Bhán - 2015 CCÉ Concert Tour of North America. Comhaltas Ceoltóirí Éireann. (01/01/2015). Sound [Type]. Digital Repository of Ireland (2020) [Publisher]
+
+University College Cork [Depositor]. Goblinwoode Water Video. Josh Wagner. (2025-05-20). MovingImage [Type]. Digital Repository of Ireland (2025) [Publisher].
+
+University of Limerick [Depositor]. L1127, Murroe, Liscreagh. University of Limerick, Locating Bench Marks, Preserving Heritage, Ordnance Survey. (1830s-1990s). Image [Type]. Digital Repository of Ireland (2026) [Publisher]. https://doi.org/10.7486/DRI.1v540035x
+
+An Post Museum and Archive [Depositor]. Mounted postmen - allowance for animal feed. Department of Posts & Telegraphs. (1926). Image [Type]. Digital Repository of Ireland (2024) [Publisher]. https://doi.org/10.7486/DRI.j960fw194
+
+National Botanic Gardens [Depositor]. Papaver rhoeas L.. DBN herbarium. (1943). Image [Type]. Digital Repository of Ireland (2025) [Publisher]. https://doi.org/10.7486/DRI.x346t635v
+
+The Discovery Programme [Depositor]. Plan orthoimage of a point cloud of Martello tower no. 9 (SMR No.: DU023-029009-), Dalkey Island, County Dublin. The terrestrial laser scanning data was captured on 04/04/2022.. The Discovery Programme, CHERISH Project. (04/04/2022). Image [Type]. Digital Repository of Ireland (2025) [Publisher]. https://doi.org/10.7486/DRI.ww72rd220
+
+An Post Museum and Archive [Depositor]. Telephonists - Killarney post office. Department of Posts & Telegraphs. (1800-2000). Image [Type]. Digital Repository of Ireland (2024) [Publisher]. https://doi.org/10.7486/DRI.xw432441z
+
+Hunt Museum, Limerick [Depositor]. Reliquary cross-pendant . Spanish-English. (c.1500 - c1550). Image [Type]. Digital Repository of Ireland (2022) [Publisher]. https://doi.org/10.7486/DRI.bn99q0259-2
+
+Royal Irish Academy [Depositor]. Comhrá samplach.Sample dialogue. Dr Wilhelm Doegen. (1928-09-13). Sound [Type]. Digital Repository of Ireland (2022) [Publisher]. https://doi.org/10.7486/DRI.s178j820k
+
+
+## Audio objects which have been modified for use in the game
 
 Royal Irish Academy [Depositor]. Laethanta na seachtaine.The days of the week. Dr Wilhelm Doegen. (1931-10-03). Sound [Type]. Digital Repository of Ireland (2022) [Publisher]. https://doi.org/10.7486/DRI.r7829447m
 
