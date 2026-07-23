@@ -1,12 +1,33 @@
 # Speak Like Me
-This is an Irish-language game developed by the Digital Repository of Ireland for the Digital Preservation in the Arts, Social Sciences and Humanities Conference 2026. It uses audio and video clips from the following Digital Collections in the DRI
+Speak Like Me is an Irish-language game developed by the Digital Repository of Ireland using Twine. It uses the  Harlowe 3.3.9 story format.
+
+## Files
+index.html: the playable game file
+index.twee: the plain-text source code containing story nodes and logic
+assets folder: contains some audio files used within the game, but please note that the game itself accesses all audio files directly from the Digital Repository of Ireland and from Github, rather than accessing these files locally.
+
+
+## How to play
+You can access the game online on Github pages at https://digital-repository-of-ireland.github.io/SpeakLikeMe/index.html
+
+Alternatively, double-click the index.html file to launch it in locally in a web browser.
+
+##How to Edit/Recompile
+You can modify this game by editing the twee file or by loading it into Twine.
+
+To compile the html from the twee file, run: tweego -o index.html index.twee.
+
+To edit the game in Twine, got to twinery.org and import either the html or twee file via Library - Import.
+
+## Background
+The game was initially developed for the Digital Preservation in the Arts, Social Sciences and Humanities Conference 2026. It uses audio and video clips from the following Digital Collections in the DRI
 - The Royal Irish Academy (RIA) "Tionscadal Gréasáin Cheirníní Doegen, The Doegen Records Web Project" Collection
 - University College Cork (UCC) "Grieving with Forests - a (Re)Wilding Thesis Project" Collection
 - The Arts & Cultire in Education Research Repository (ACERR) "Comhaltas Ceoltóirí Éireann" Collection
 
 The objects used in the game are licenced under Creative Commons Attribution 4.0 International License and Creative Commons Attribution-NonCommercial 4.0 International License.
 
-Although the game largely uses objects directly from the Repository, some audio files were edited, cut or remixed, and these are hosted here.
+Although the game largely uses objects directly from the Repository, some audio files were edited, cut or remixed, and these are hosted on Github.
 
 The code for the game was created using Twine and written by DRI Staff, although some code snippets were created by AI tools. This is part of our ongoing work to explore legitimate uses for GenAI within the domain of archiving and repositories. You can find out more about how the DRI uses AI in our AI Statement [https://doi.org/10.7486/DRI.1c18th94h](https://doi.org/10.7486/DRI.1c18th94h).
 
