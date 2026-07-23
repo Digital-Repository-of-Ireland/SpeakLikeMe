@@ -12,7 +12,7 @@ You can access the game online on Github pages at https://digital-repository-of-
 
 Alternatively, double-click the index.html file to launch it in locally in a web browser.
 
-##How to Edit/Recompile
+## How to Edit/Recompile
 You can modify this game by editing the twee file or by loading it into Twine.
 
 To compile the html from the twee file, run: tweego -o index.html index.twee.
