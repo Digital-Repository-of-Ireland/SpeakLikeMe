@@ -569,7 +569,7 @@ Video not playing? Try a browser that supports the HTML5 video tag!
 <h1>Friday -  Dé hAoine</h1>
 
 <audio id="audioClip" preload="auto" controls>
-<source src="https://digital-repository-of-ireland.github.io/SpeakLikeMe/Fridays.mp3">
+<source src="https://digital-repository-of-ireland.github.io/SpeakLikeMe/assets/Fridays.mp3">
 </audio>
 
 <p>If you wish to contribute your recording to the DRI's Speak Like Me Collection please use the "Upload" button below. Contributions will be archived in the Digital Repository of Ireland under a Creative Commons CC BY 4.0 Attribution licence. They will be made available to the public.</p>
@@ -795,7 +795,7 @@ Video not playing? Try a browser that supports the HTML5 video tag!
 <h1>Monday - Dé Luain</h1>
 
 <audio id="audioClip" preload="auto" controls>
-<source src="https://digital-repository-of-ireland.github.io/SpeakLikeMe/Mondays.mp3">
+<source src="https://digital-repository-of-ireland.github.io/SpeakLikeMe/assets/Mondays.mp3">
 </audio>
 
 <p>If you wish to contribute your recording to the DRI's Speak Like Me Collection please use the "Upload" button below. Contributions will be archived in the Digital Repository of Ireland under a Creative Commons CC BY 4.0 Attribution licence. They will be made available to the public.</p>
@@ -991,7 +991,7 @@ Video not playing? Try a browser that supports the HTML5 video tag!
 <h1>Saturday -  Dé Sathairn</h1>
 
 <audio id="audioClip" preload="auto" controls>
-<source src="https://digital-repository-of-ireland.github.io/SpeakLikeMe/Saturdays.mp3">
+<source src="https://digital-repository-of-ireland.github.io/SpeakLikeMe/assets/Saturdays.mp3">
 </audio>
 
 <p>If you wish to contribute your recording to the DRI's Speak Like Me Collection please use the "Upload" button below. Contributions will be archived in the Digital Repository of Ireland under a Creative Commons CC BY 4.0 Attribution licence. They will be made available to the public.</p>
@@ -1033,7 +1033,7 @@ Video not playing? Try a browser that supports the HTML5 video tag!
 <h1>Sunday -  Dé Domhnaigh</h1>
 
 <audio id="audioClip" preload="auto" controls>
-<source src="https://digital-repository-of-ireland.github.io/SpeakLikeMe/Sundays.mp3">
+<source src="https://digital-repository-of-ireland.github.io/SpeakLikeMe/assets/Sundays.mp3">
 </audio>
 
 <p>If you wish to contribute your recording to the DRI's Speak Like Me Collection please use the "Upload" button below. Contributions will be archived in the Digital Repository of Ireland under a Creative Commons CC BY 4.0 Attribution licence. They will be made available to the public.</p>
@@ -1086,7 +1086,7 @@ Video not playing? Try a browser that supports the HTML5 video tag!
 <p>Royal Irish Academy &#91;Depositor&#93;. Paidir an Tiarna; an tÁivé Máiria.The Lord's prayer; the Ave Maria. Dr Wilhelm Doegen. (1928-09-13). Sound &#91;Type&#93;. Digital Repository of Ireland (2022) &#91;Publisher&#93;. <a href="https://doi.org/10.7486/DRI.d7926464h" target="_blank">https://doi.org/10.7486/DRI.d7926464h</a></p>
 
 <audio id="audioClip" preload="auto" controls>
-<source src="https://digital-repository-of-ireland.github.io/SpeakLikeMe/arnathair.mp3">
+<source src="https://digital-repository-of-ireland.github.io/SpeakLikeMe/assets/arnathair.mp3">
 </audio>
 
 [[Let me try!|recordlordsprayer]]
@@ -1101,7 +1101,7 @@ Video not playing? Try a browser that supports the HTML5 video tag!
 <h1>Thursday - Déardaoin</h1>
 
 <audio id="audioClip" preload="auto" controls>
-<source src="https://digital-repository-of-ireland.github.io/SpeakLikeMe/Thursdays.mp3">
+<source src="https://digital-repository-of-ireland.github.io/SpeakLikeMe/assets/Thursdays.mp3">
 </audio>
 
 <p>If you wish to contribute your recording to the DRI's Speak Like Me Collection please use the "Upload" button below. Contributions will be archived in the Digital Repository of Ireland under a Creative Commons CC BY 4.0 Attribution licence. They will be made available to the public.</p>
@@ -1143,7 +1143,7 @@ Video not playing? Try a browser that supports the HTML5 video tag!
 <h1>Tuesday - Dé Máirt</h1>
 
 <audio id="audioClip" preload="auto" controls>
-<source src="https://digital-repository-of-ireland.github.io/SpeakLikeMe/Tuesdays.mp3">
+<source src="https://digital-repository-of-ireland.github.io/SpeakLikeMe/assets/Tuesdays.mp3">
 </audio>
 
 <p>If you wish to contribute your recording to the DRI's Speak Like Me Collection please use the "Upload" button below. Contributions will be archived in the Digital Repository of Ireland under a Creative Commons CC BY 4.0 Attribution licence. They will be made available to the public.</p>
@@ -1231,7 +1231,7 @@ Video not playing? Try a browser that supports the HTML5 video tag!
 <h1>Wednesday - Dé Céadaoine</h1>
 
 <audio id="audioClip" preload="auto" controls>
-<source src="https://digital-repository-of-ireland.github.io/SpeakLikeMe/Wednesdays.mp3">
+<source src="https://digital-repository-of-ireland.github.io/SpeakLikeMe/assets/Wednesdays.mp3">
 </audio>
 
 <p>If you wish to contribute your recording to the DRI's Speak Like Me Collection please use the "Upload" button below. Contributions will be archived in the Digital Repository of Ireland under a Creative Commons CC BY 4.0 Attribution licence. They will be made available to the public.</p>
@@ -1281,7 +1281,7 @@ Video not playing? Try a browser that supports the HTML5 video tag!
 <p>Royal Irish Academy &#91;Depositor&#93;. Uimhreacha.Numbers. Dr Wilhelm Doegen. (1928-09-05). Sound &#91;Type&#93;. Digital Repository of Ireland (2022) &#91;Publisher&#93;. <a href="https://doi.org/10.7486/DRI.ww72r097k" target="_blank">https://doi.org/10.7486/DRI.ww72r097k</a></p>
 
 <audio id="audioClip" preload="auto" controls>
-<source src="https://digital-repository-of-ireland.github.io/SpeakLikeMe/numbers.mp3">
+<source src="https://digital-repository-of-ireland.github.io/SpeakLikeMe/assets/numbers.mp3">
 </audio>
 
 [[Let me try!|record1to10]]
@@ -1349,7 +1349,7 @@ Video not playing? Try a browser that supports the HTML5 video tag!
 <h1>Counting - Ag Comhaireamh</h1>
 
 <audio id="audioClip" preload="auto" controls>
-<source src="https://digital-repository-of-ireland.github.io/SpeakLikeMe/numbers.mp3">
+<source src="https://digital-repository-of-ireland.github.io/SpeakLikeMe/assets/numbers.mp3">
 </audio>
 
 <table>
@@ -1403,7 +1403,7 @@ Video not playing? Try a browser that supports the HTML5 video tag!
 :: recordlordsprayer [prayer regular] {"position":"350,225","size":"100,100"}
 (set: $currentPassage to "prayer")
 <audio id="audioClip" preload="auto" controls>
-<source src="https://digital-repository-of-ireland.github.io/SpeakLikeMe/arnathair.mp3">
+<source src="https://digital-repository-of-ireland.github.io/SpeakLikeMe/assets/arnathair.mp3">
 </audio>
 
 <p>If you learned the Ár nAthair in school, you may find that the version recited here includes some archaic or regional differences to the version with which you are familiar. You are welcome to record either version</p>
