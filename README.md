@@ -50,6 +50,7 @@ Hunt Museum, Limerick [Depositor]. Reliquary cross-pendant . Spanish-English. (c
 
 Royal Irish Academy [Depositor]. Comhrá samplach.Sample dialogue. Dr Wilhelm Doegen. (1928-09-13). Sound [Type]. Digital Repository of Ireland (2022) [Publisher]. https://doi.org/10.7486/DRI.s178j820k
 
+Digital Repository of Ireland [Depositor]. Taifeadtaí de Théarmaíocht an Bhuanchoimeádta Dhigitigh.Digital Preservation Terminology Recordings. name=Niamh Ní Charra, archivist, University of Galway; authority=ORCID; identifier=https://orcid.org/0009-0009-6539-4809. (2025-05-25). Collection [Type]. Digital Repository of Ireland (2026) [Publisher]. https://doi.org/10.7486/DRI.1831ss39z (Accessed: 2026/08/12)
 
 ## Audio objects which have been modified for use in the game
 
