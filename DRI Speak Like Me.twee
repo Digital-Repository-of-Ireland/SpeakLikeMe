@@ -879,7 +879,7 @@ Video not playing? Try a browser that supports the HTML5 video tag!
 
 :: Portrush {"position":"1350,1325","size":"100,100"}
 (set: $currentPassage to "Portrush")
-<h1>Portrush Port Rois</h1>
+<h1>Portrush - Port Rois</h1>
 
 <audio id="audioClip" preload="auto" controls>
 <source src="https://repository.dri.ie/objects/pz50x351w/files/q524zw19r/download?type=surrogate">
