@@ -233,7 +233,7 @@ DRI Speak Like Me
 <h1>Born-Digital Record - Taifead Digitghinte</h1>
 
 <audio id="audioClip" preload="auto" controls>
-<source src="https://digital-repository-of-ireland.github.io/SpeakLikeMe/Born digital record.m4a">
+<source src="https://repository.dri.ie/objects/2r378499q/files/3198bt51c/download?type=surrogate">
 </audio>
 
 <p>If you wish to contribute your recording to the DRI's Speak Like Me Collection please use the "Upload" button below. Contributions will be archived in the Digital Repository of Ireland under a Creative Commons CC BY 4.0 Attribution licence. They will be made available to the public.</p>
@@ -268,6 +268,9 @@ DRI Speak Like Me
   <button id="uploadBtn" onclick="uploadRecording()" disabled>Upload</button>
   <button onclick="reRecord()">Re-record</button>
 </div>
+
+''Source:''
+<p>Digital Repository of Ireland &#91;Depositor&#93. taifead (fir1) digitghinte.born-digital record (s). Niamh Ní Charra, archivist, University of Galway, Digital Repository of Ireland. (2025-05-25). Sound &#91;Type&#93. Digital Repository of Ireland (2026) &#91;Publisher&#93. <a href="https://doi.org/10.7486/DRI.2r378499q" target="_blank">https://doi.org/10.7486/DRI.2r378499q</a></p>
 
 
 :: Bushmills {"position":"1625,1125","size":"100,100"}
@@ -367,7 +370,7 @@ DRI Speak Like Me
 <h1>Community Archive - Cartlann Phobail</h1>
 
 <audio id="audioClip" preload="auto" controls>
-<source src="https://digital-repository-of-ireland.github.io/SpeakLikeMe/Community archive.m4a">
+<source src="https://repository.dri.ie/objects/3t94kz238/files/4168nq910/download?type=surrogate">
 </audio>
 
 <p>If you wish to contribute your recording to the DRI's Speak Like Me Collection please use the "Upload" button below. Contributions will be archived in the Digital Repository of Ireland under a Creative Commons CC BY 4.0 Attribution licence. They will be made available to the public.</p>
@@ -402,6 +405,9 @@ DRI Speak Like Me
   <button id="uploadBtn" onclick="uploadRecording()" disabled>Upload</button>
   <button onclick="reRecord()">Re-record</button>
 </div>
+
+''Source:''
+<p>Digital Repository of Ireland &#91;Depositor&#93.  cartlann (bain2) phobail.community archive (s). Niamh Ní Charra, archivist, University of Galway, Digital Repository of Ireland. (2025-05-25). Sound &#91;Type&#93. Digital Repository of Ireland (2026) &#91;Publisher&#93. <a href="https://doi.org/10.7486/DRI.3t94kz238" target="_blank">https://doi.org/10.7486/DRI.3t94kz238</a></p>
 
 
 :: DRI Speak Like Me {"position":"750,250","size":"100,100"}
@@ -473,7 +479,7 @@ Video not playing? Try a browser that supports the HTML5 video tag!
 <h1>Descriptive Metadata - Meiteashonraí Tuairisciúla</h1>
 
 <audio id="audioClip" preload="auto" controls>
-<source src="https://digital-repository-of-ireland.github.io/SpeakLikeMe/Descriptive metadata.m4a">
+<source src="https://repository.dri.ie/objects/54260j15d/files/5b002983t/download?type=surrogate">
 </audio>
 
 <p>If you wish to contribute your recording to the DRI's Speak Like Me Collection please use the "Upload" button below. Contributions will be archived in the Digital Repository of Ireland under a Creative Commons CC BY 4.0 Attribution licence. They will be made available to the public.</p>
@@ -509,13 +515,16 @@ Video not playing? Try a browser that supports the HTML5 video tag!
   <button onclick="reRecord()">Re-record</button>
 </div>
 
+''Source:''
+<p>Digital Repository of Ireland &#91;Depositor&#93.  meiteashonraí (fir iol) tuairisciúla.descriptive metadata (s). Niamh Ní Charra, archivist, University of Galway, Digital Repository of Ireland. (2025-05-25). Sound &#91;Type&#93. Digital Repository of Ireland (2026) &#91;Publisher&#93. <a href="https://doi.org/10.7486/DRI.54260j15d" target="_blank">https://doi.org/10.7486/DRI.54260j15d</a></p>
+
 
 :: Digital Preservation [teármaíocht regular] {"position":"625,975","size":"100,100"}
 (set: $currentPassage to "digitalpreservation")
 <h1>Digital Preservation - Buanchoimeád Digiteach</h1>
 
 <audio id="audioClip" preload="auto" controls>
-<source src="https://digital-repository-of-ireland.github.io/SpeakLikeMe/Digital preservation.m4a">
+<source src="https://repository.dri.ie/objects/61098j715/files/6d57d407b/download?type=surrogate">
 </audio>
 
 <p>If you wish to contribute your recording to the DRI's Speak Like Me Collection please use the "Upload" button below. Contributions will be archived in the Digital Repository of Ireland under a Creative Commons CC BY 4.0 Attribution licence. They will be made available to the public.</p>
@@ -550,6 +559,9 @@ Video not playing? Try a browser that supports the HTML5 video tag!
   <button id="uploadBtn" onclick="uploadRecording()" disabled>Upload</button>
   <button onclick="reRecord()">Re-record</button>
 </div>
+
+''Source:''
+<p>Digital Repository of Ireland &#91;Depositor&#93.  buanchoimeád (fir1) digiteach.digital preservation (s). Niamh Ní Charra, archivist, University of Galway, Digital Repository of Ireland. (2025-05-25). Sound &#91;Type&#93. Digital Repository of Ireland (2026) &#91;Publisher&#93. <a href="https://doi.org/10.7486/DRI.61098j715" target="_blank">https://doi.org/10.7486/DRI.61098j715</a></p>
 
 
 :: Friday [days regular] {"position":"1650,375","size":"100,100"}
@@ -737,7 +749,7 @@ Video not playing? Try a browser that supports the HTML5 video tag!
 <h1>Long-term Preservation - Buanchoimeád Fadtéarmach</h1>
 
 <audio id="audioClip" preload="auto" controls>
-<source src="https://digital-repository-of-ireland.github.io/SpeakLikeMe/Long-term preservation.m4a">
+<source src="https://repository.dri.ie/objects/9p29dh79g/files/b277j3155/download?type=surrogate">
 </audio>
 
 <p>If you wish to contribute your recording to the DRI's Speak Like Me Collection please use the "Upload" button below. Contributions will be archived in the Digital Repository of Ireland under a Creative Commons CC BY 4.0 Attribution licence. They will be made available to the public.</p>
@@ -772,6 +784,10 @@ Video not playing? Try a browser that supports the HTML5 video tag!
   <button id="uploadBtn" onclick="uploadRecording()" disabled>Upload</button>
   <button onclick="reRecord()">Re-record</button>
 </div>
+
+
+''Source:''
+<p>Digital Repository of Ireland &#91;Depositor&#93.  buanchoimeád (fir) fadtéarmach.long-term preservation (s). Niamh Ní Charra, archivist, University of Galway, Digital Repository of Ireland. (2025-05-25). Sound &#91;Type&#93. Digital Repository of Ireland (2026) &#91;Publisher&#93. <a href="https://doi.org/10.7486/DRI.9p29dh79g" target="_blank">https://doi.org/10.7486/DRI.9p29dh79g</a></p>
 
 
 :: Monday [days regular] {"position":"1250,175","size":"100,100"}
@@ -821,7 +837,7 @@ Video not playing? Try a browser that supports the HTML5 video tag!
 <h1>Persistent Identifier - Aitheantóir Seasmhach</h1>
 
 <audio id="audioClip" preload="auto" controls>
-<source src="https://digital-repository-of-ireland.github.io/SpeakLikeMe/Persistent identifier.m4a">
+<source src="https://repository.dri.ie/objects/c534vw39g/files/cj830f75g/download?type=surrogate">
 </audio>
 
 <p>If you wish to contribute your recording to the DRI's Speak Like Me Collection please use the "Upload" button below. Contributions will be archived in the Digital Repository of Ireland under a Creative Commons CC BY 4.0 Attribution licence. They will be made available to the public.</p>
@@ -856,6 +872,9 @@ Video not playing? Try a browser that supports the HTML5 video tag!
   <button id="uploadBtn" onclick="uploadRecording()" disabled>Upload</button>
   <button onclick="reRecord()">Re-record</button>
 </div>
+
+''Source:''
+<p>Digital Repository of Ireland &#91;Depositor&#93.  aitheantóir (fir3) seasmhach.persistent identifier (s). Niamh Ní Charra, archivist, University of Galway, Digital Repository of Ireland. (2025-05-25). Sound &#91;Type&#93. Digital Repository of Ireland (2026) &#91;Publisher&#93. <a href="https://doi.org/10.7486/DRI.c534vw39g" target="_blank">https://doi.org/10.7486/DRI.c534vw39g</a></p>
 
 
 :: Portrush {"position":"1350,1325","size":"100,100"}
@@ -909,7 +928,7 @@ Video not playing? Try a browser that supports the HTML5 video tag!
 <h1>Reuse Licence - Ceadúnas Athúsáide</h1>
 
 <audio id="audioClip" preload="auto" controls>
-<source src="https://digital-repository-of-ireland.github.io/SpeakLikeMe/Reuse licence.m4a">
+<source src="https://repository.dri.ie/objects/dv14d167f/files/f188ft35r/download?type=surrogate">
 </audio>
 
 <p>If you wish to contribute your recording to the DRI's Speak Like Me Collection please use the "Upload" button below. Contributions will be archived in the Digital Repository of Ireland under a Creative Commons CC BY 4.0 Attribution licence. They will be made available to the public.</p>
@@ -944,6 +963,9 @@ Video not playing? Try a browser that supports the HTML5 video tag!
   <button id="uploadBtn" onclick="uploadRecording()" disabled>Upload</button>
   <button onclick="reRecord()">Re-record</button>
 </div>
+
+''Source:''
+<p>Digital Repository of Ireland &#91;Depositor&#93.  ceadúnas (fir1) athúsáide.reuse licence (s). Niamh Ní Charra, archivist, University of Galway, Digital Repository of Ireland. (2025-05-25). Sound &#91;Type&#93. Digital Repository of Ireland (2026) &#91;Publisher&#93. <a href="https://doi.org/10.7486/DRI.dv14d167f" target="_blank">https://doi.org/10.7486/DRI.dv14d167f</a></p>
 
 
 :: START [start regular] {"position":"875,500","size":"100,100"}
@@ -1163,7 +1185,7 @@ Video not playing? Try a browser that supports the HTML5 video tag!
 <h1>Web Archiving - Cartlannú Gréasáin</h1>
 
 <audio id="audioClip" preload="auto" controls>
-<source src="https://digital-repository-of-ireland.github.io/SpeakLikeMe/Web archiving.m4a">
+<source src="https://repository.dri.ie/objects/h7034d83b/files/hh647335n/download?type=surrogate">
 </audio>
 
 <p>If you wish to contribute your recording to the DRI's Speak Like Me Collection please use the "Upload" button below. Contributions will be archived in the Digital Repository of Ireland under a Creative Commons CC BY 4.0 Attribution licence. They will be made available to the public.</p>
@@ -1198,6 +1220,10 @@ Video not playing? Try a browser that supports the HTML5 video tag!
   <button id="uploadBtn" onclick="uploadRecording()" disabled>Upload</button>
   <button onclick="reRecord()">Re-record</button>
 </div>
+
+
+''Source:''
+<p>Digital Repository of Ireland &#91;Depositor&#93.  cartlannú (fir) gréasáin.web archiving (s). Niamh Ní Charra, archivist, University of Galway, Digital Repository of Ireland. (2025-05-25). Sound &#91;Type&#93. Digital Repository of Ireland (2026) &#91;Publisher&#93. <a href="https://doi.org/10.7486/DRI.h7034d83b" target="_blank">https://doi.org/10.7486/DRI.h7034d83b</a></p>
 
 
 :: Wednesday [days regular] {"position":"1500,200","size":"100,100"}
