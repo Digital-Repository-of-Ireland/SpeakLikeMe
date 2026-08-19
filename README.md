@@ -42,15 +42,19 @@ An Post Museum and Archive [Depositor]. Mounted postmen - allowance for animal f
 
 National Botanic Gardens [Depositor]. Papaver rhoeas L.. DBN herbarium. (1943). Image [Type]. Digital Repository of Ireland (2025) [Publisher]. https://doi.org/10.7486/DRI.x346t635v
 
+Technological University of the Shannon [Depositor]. Map of location and approximate extent of Pat O'Carroll site on Shannon. Shannon Free Airport Development Company. . Image [Type]. Digital Repository of Ireland (2025) [Publisher]. https://doi.org/10.7486/DRI.n584bw60x 
+
 The Discovery Programme [Depositor]. Plan orthoimage of a point cloud of Martello tower no. 9 (SMR No.: DU023-029009-), Dalkey Island, County Dublin. The terrestrial laser scanning data was captured on 04/04/2022.. The Discovery Programme, CHERISH Project. (04/04/2022). Image [Type]. Digital Repository of Ireland (2025) [Publisher]. https://doi.org/10.7486/DRI.ww72rd220
 
 An Post Museum and Archive [Depositor]. Telephonists - Killarney post office. Department of Posts & Telegraphs. (1800-2000). Image [Type]. Digital Repository of Ireland (2024) [Publisher]. https://doi.org/10.7486/DRI.xw432441z
 
 Hunt Museum, Limerick [Depositor]. Reliquary cross-pendant . Spanish-English. (c.1500 - c1550). Image [Type]. Digital Repository of Ireland (2022) [Publisher]. https://doi.org/10.7486/DRI.bn99q0259-2
 
-Royal Irish Academy [Depositor]. Comhrá samplach.Sample dialogue. Dr Wilhelm Doegen. (1928-09-13). Sound [Type]. Digital Repository of Ireland (2022) [Publisher]. https://doi.org/10.7486/DRI.s178j820k
+Selected objects from Digital Repository of Ireland [Depositor]. Taifeadtaí de Théarmaíocht an Bhuanchoimeádta Dhigitigh.Digital Preservation Terminology Recordings. Niamh Ní Charra, archivist, University of Galway. (2025-05-25). Collection [Type]. Digital Repository of Ireland (2026) [Publisher]. https://doi.org/10.7486/DRI.1831ss39z
 
-Digital Repository of Ireland [Depositor]. Taifeadtaí de Théarmaíocht an Bhuanchoimeádta Dhigitigh.Digital Preservation Terminology Recordings. name=Niamh Ní Charra, archivist, University of Galway; authority=ORCID; identifier=https://orcid.org/0009-0009-6539-4809. (2025-05-25). Collection [Type]. Digital Repository of Ireland (2026) [Publisher]. https://doi.org/10.7486/DRI.1831ss39z (Accessed: 2026/08/12)
+Selected objects from Logainm Sound Recordings.Taifeadtaí Fuaime Logainm. Brian Ó Raghallaigh, Patrick Egan. (2007–2021). Collection [Type]. Digital Repository of Ireland (2024) [Publisher]. https://doi.org/10.7486/DRI.jd47gr915
+
+Royal Irish Academy [Depositor]. Comhrá samplach.Sample dialogue. Dr Wilhelm Doegen. (1928-09-13). Sound [Type]. Digital Repository of Ireland (2022) [Publisher]. https://doi.org/10.7486/DRI.s178j820k
 
 ## Audio objects which have been modified for use in the game
 
