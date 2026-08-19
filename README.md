@@ -20,19 +20,24 @@ To compile the html from the twee file, run: tweego -o index.html index.twee.
 To edit the game in Twine, got to twinery.org and import either the html or twee file via Library - Import.
 
 ## Background
-The game was initially developed for the Digital Preservation in the Arts, Social Sciences and Humanities Conference 2026. It uses audio and video clips from the following Digital Collections in the DRI
+The game was initially developed for the Digital Preservation in the Arts, Social Sciences and Humanities Conference 2026. It uses audio and video clips from the following Digital Collections in the DRI.
+
 - The Royal Irish Academy (RIA) "Tionscadal Gréasáin Cheirníní Doegen, The Doegen Records Web Project" Collection
+- The Digital Repository of Ireland (DRI) "Taifeadtaí de Théarmaíocht an Bhuanchoimeádta Dhigitigh, Digital Preservation Terminology Recordings" Collection
+- The "Logainm Sound Recordings, Taifeadtaí Fuaime Logainm" Collection
 - University College Cork (UCC) "Grieving with Forests - a (Re)Wilding Thesis Project" Collection
 - The Arts & Cultire in Education Research Repository (ACERR) "Comhaltas Ceoltóirí Éireann" Collection
 
-The objects used in the game are licenced under Creative Commons Attribution 4.0 International License and Creative Commons Attribution-NonCommercial 4.0 International License.
+It also uses a number of images from the Repository.
+
+The objects used in the game are licenced under Creative Commons Licenses or Public Domain dedications.
 
 Although the game largely uses objects directly from the Repository, some audio files were edited, cut or remixed, and these are hosted on Github.
 
 The code for the game was created using Twine and written by DRI Staff, although some code snippets were created by AI tools. This is part of our ongoing work to explore legitimate uses for GenAI within the domain of archiving and repositories. You can find out more about how the DRI uses AI in our AI Statement [https://doi.org/10.7486/DRI.1c18th94h](https://doi.org/10.7486/DRI.1c18th94h).
 
 ## Objects and collections used directly from the Repository in the game
-Arts and Culture in Education Research Repository [Depositor]. 10. Amhrán: Neansín Bhán - 2015 CCÉ Concert Tour of North America. Comhaltas Ceoltóirí Éireann. (01/01/2015). Sound [Type]. Digital Repository of Ireland (2020) [Publisher]
+Arts and Culture in Education Research Repository [Depositor]. 10. Amhrán: Neansín Bhán - 2015 CCÉ Concert Tour of North America. Comhaltas Ceoltóirí Éireann. (01/01/2015). Sound [Type]. Digital Repository of Ireland (2020) [Publisher]
 
 University College Cork [Depositor]. Goblinwoode Water Video. Josh Wagner. (2025-05-20). MovingImage [Type]. Digital Repository of Ireland (2025) [Publisher].
 
