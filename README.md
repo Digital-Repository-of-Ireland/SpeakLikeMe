@@ -2,9 +2,9 @@
 Speak Like Me is an Irish-language game developed by the Digital Repository of Ireland using Twine. It uses the  Harlowe 3.3.9 story format.
 
 ## Files
-index.html: the playable game file
-index.twee: the plain-text source code containing story nodes and logic
-assets folder: contains some audio files used within the game, but please note that the game itself accesses all audio files directly from the Digital Repository of Ireland and from Github, rather than accessing these files locally.
+- index.html: the playable game file
+- index.twee: the plain-text source code containing story nodes and logic
+- assets folder: contains some audio files used within the game, but please note that the game itself accesses all audio files directly from the Digital Repository of Ireland and from Github, rather than accessing these files locally.
 
 
 ## How to play
