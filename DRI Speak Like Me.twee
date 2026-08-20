@@ -44,7 +44,7 @@ DRI Speak Like Me
 
 
 
-:: Antrim {"position":"1075,1150","size":"100,100"}
+:: Antrim [placenames regular] {"position":"1075,1150","size":"100,100"}
 (set: $currentPassage to "Antrim")
 <h1>Antrim - Aontroim</h1>
 
@@ -90,7 +90,7 @@ DRI Speak Like Me
 
 
 
-:: Ballycastle {"position":"1450,1275","size":"100,100"}
+:: Ballycastle [placenames regular] {"position":"1450,1275","size":"100,100"}
 (set: $currentPassage to "Ballycastle")
 <h1>Ballycastle - Baile an Chaistil</h1>
 
@@ -136,7 +136,7 @@ DRI Speak Like Me
 
 
 
-:: Ballymena {"position":"1100,1025","size":"100,100"}
+:: Ballymena [placenames regular] {"position":"1100,1025","size":"100,100"}
 (set: $currentPassage to "Ballymena")
 <h1>Ballymena - An Baile Meánach</h1>
 
@@ -182,7 +182,7 @@ DRI Speak Like Me
 
 
 
-:: Belfast {"position":"1125,1275","size":"100,100"}
+:: Belfast [placenames regular] {"position":"1125,1275","size":"100,100"}
 (set: $currentPassage to "Belfast")
 <h1>Belfast - Béal Feirste</h1>
 
@@ -273,7 +273,7 @@ DRI Speak Like Me
 <p>Digital Repository of Ireland &#91;Depositor&#93. taifead (fir1) digitghinte.born-digital record (s). Niamh Ní Charra, archivist, University of Galway, Digital Repository of Ireland. (2025-05-25). Sound &#91;Type&#93. Digital Repository of Ireland (2026) &#91;Publisher&#93. <a href="https://doi.org/10.7486/DRI.2r378499q" target="_blank">https://doi.org/10.7486/DRI.2r378499q</a></p>
 
 
-:: Bushmills {"position":"1625,1125","size":"100,100"}
+:: Bushmills [placenames regular] {"position":"1625,1125","size":"100,100"}
 (set: $currentPassage to "Bushmills")
 <h1>Bushmills - Muileann na Buaise</h1>
 
@@ -319,7 +319,7 @@ DRI Speak Like Me
 
 
 
-:: Carrickfergus {"position":"1525,1175","size":"100,100"}
+:: Carrickfergus [placenames regular] {"position":"1525,1175","size":"100,100"}
 (set: $currentPassage to "Carrickfergus")
 <h1>Carrickfergus - Carraig Fhearghais</h1>
 
@@ -606,7 +606,7 @@ Video not playing? Try a browser that supports the HTML5 video tag!
 </div>
 
 
-:: GiantsCauseway {"position":"1625,1000","size":"100,100"}
+:: GiantsCauseway [placenames regular] {"position":"1625,1000","size":"100,100"}
 (set: $currentPassage to "GiantsCauseway")
 <h1>Giant's Causeway - Clochán an Aifir</h1>
 
@@ -652,7 +652,7 @@ Video not playing? Try a browser that supports the HTML5 video tag!
 
 
 
-:: Larne {"position":"1225,1325","size":"100,100"}
+:: Larne [placenames regular] {"position":"1225,1325","size":"100,100"}
 (set: $currentPassage to "Larne")
 <h1>Larne - Latharnah</h1>
 
@@ -698,7 +698,7 @@ Video not playing? Try a browser that supports the HTML5 video tag!
 
 
 
-:: Lisburn {"position":"1600,875","size":"100,100"}
+:: Lisburn [placenames regular] {"position":"1600,875","size":"100,100"}
 (set: $currentPassage to "Lisburn")
 <h1>Lisburn - Lios na gCearrbhach</h1>
 
@@ -877,7 +877,7 @@ Video not playing? Try a browser that supports the HTML5 video tag!
 <p>Digital Repository of Ireland &#91;Depositor&#93.  aitheantóir (fir3) seasmhach.persistent identifier (s). Niamh Ní Charra, archivist, University of Galway, Digital Repository of Ireland. (2025-05-25). Sound &#91;Type&#93. Digital Repository of Ireland (2026) &#91;Publisher&#93. <a href="https://doi.org/10.7486/DRI.c534vw39g" target="_blank">https://doi.org/10.7486/DRI.c534vw39g</a></p>
 
 
-:: Portrush {"position":"1350,1325","size":"100,100"}
+:: Portrush [placenames regular] {"position":"1350,1325","size":"100,100"}
 (set: $currentPassage to "Portrush")
 <h1>Portrush - Port Rois</h1>
 
