@@ -16,7 +16,8 @@ DRI Speak Like Me
     "regular": "orange",
     "conversation": "blue",
     "start": "blue",
-    "teármaíocht": "red"
+    "teármaíocht": "red",
+    "amharceireann": "purple"
   },
   "zoom": 0.6
 }
@@ -41,6 +42,502 @@ DRI Speak Like Me
 [[Let me try!|recordsampleconv]]
 
 <p>The background image on each of these pages is An Post Museum and Archive &#91;Depositor&#93;. Telephonists - Killarney post office. Department of Posts & Telegraphs. (1800-2000). Image &#91;Type&#93;. Digital Repository of Ireland (2024) &#91;Publisher&#93;. <a href="https://doi.org/10.7486/DRI.xw432441z" target="_blank">https://doi.org/10.7486/DRI.xw432441z</a></p>
+
+
+
+:: Amharc Éireann 01 [regular amharceireann] {"position":"275,1550","size":"100,100"}
+(set: $currentPassage to "nollaigmhaith")
+<h1>A Christmas Greeting</h1>
+
+<audio id="audioClip" preload="auto" controls>
+<source src="https://digital-repository-of-ireland.github.io/SpeakLikeMe/assets/01_dublin-shops-highlight-christmas_nollaigmhaith.mp3">
+</audio>
+
+<p>If you wish to contribute your recording to the DRI's Speak Like Me Collection please use the "Upload" button below. Contributions will be archived in the Digital Repository of Ireland under a Creative Commons CC BY 4.0 Attribution licence. They will be made available to the public.</p>
+
+<p>If you enter your name you will be listed as the creator of the digital object.</p>
+
+<label>
+  Your name:
+  <input type="text" id="username" placeholder="Enter your name">
+</label>
+
+<label>
+  Your Country of Origin:
+  <input type="text" id="country" placeholder="What country are you from?">
+</label>
+
+<label>
+  Your Irish Speaking Level:
+  <input type="text" id="irish" placeholder="Do you speak Irish?">
+</label>
+
+<h2>Nollaig mhaith agaibh go léir</h2>
+<p>This is a christmas greeting from the Gael Linn Amharc Éireann film "Dublin Shops Highlight Christmas / Siopaí Bhaile Átha Cliath ag tarraingt aird ar an Nollaig". It means <b>"Happy Christmas to you all"</b></p>
+
+<button onclick="startRecording('audio')">Start Recording</button>
+<button onclick="stopRecording()">Stop</button>
+
+<p id="status"></p>
+
+<div id="preview"></div>
+
+<div id="controls" style="display:none; margin-top:10px;">
+  <button id="uploadBtn" onclick="uploadRecording()" disabled>Upload</button>
+  <button onclick="reRecord()">Re-record</button>
+</div>
+
+
+:: Amharc Éireann 02 [regular amharceireann] {"position":"425,1550","size":"100,100"}
+(set: $currentPassage to "olrince")
+<h1>Drinking, Music, and Dancing</h1>
+
+<audio id="audioClip" preload="auto" controls>
+<source src="https://digital-repository-of-ireland.github.io/SpeakLikeMe/assets/02_holiday-on-the-shannon_olceolrince.mp3">
+</audio>
+
+<p>If you wish to contribute your recording to the DRI's Speak Like Me Collection please use the "Upload" button below. Contributions will be archived in the Digital Repository of Ireland under a Creative Commons CC BY 4.0 Attribution licence. They will be made available to the public.</p>
+
+<p>If you enter your name you will be listed as the creator of the digital object.</p>
+
+<label>
+  Your name:
+  <input type="text" id="username" placeholder="Enter your name">
+</label>
+
+<label>
+  Your Country of Origin:
+  <input type="text" id="country" placeholder="What country are you from?">
+</label>
+
+<label>
+  Your Irish Speaking Level:
+  <input type="text" id="irish" placeholder="Do you speak Irish?">
+</label>
+
+<h2>An áit a mbíonn ól, bíonn ceol, agus an áit a mbíonn ceol, bíonn rince.</h2>
+<p>This is a phrase from the Gael Linn Amharc Éireann film "Holiday on the Shannon / Saoire ar Sionann". It means <b>"Where there's drinking, there's music, and where there's music, there's dancing"</b>.</p>
+
+<button onclick="startRecording('audio')">Start Recording</button>
+<button onclick="stopRecording()">Stop</button>
+
+<p id="status"></p>
+
+<div id="preview"></div>
+
+<div id="controls" style="display:none; margin-top:10px;">
+  <button id="uploadBtn" onclick="uploadRecording()" disabled>Upload</button>
+  <button onclick="reRecord()">Re-record</button>
+</div>
+
+
+:: Amharc Éireann 03 [regular amharceireann] {"position":"562.5,1550","size":"100,100"}
+(set: $currentPassage to "lightscameraaction")
+<h1>Lights, camera, action!</h1>
+
+<audio id="audioClip" preload="auto" controls>
+<source src="https://digital-repository-of-ireland.github.io/SpeakLikeMe/assets/03_sidney-street-seige_lightscameraaction.mp3">
+</audio>
+
+<p>If you wish to contribute your recording to the DRI's Speak Like Me Collection please use the "Upload" button below. Contributions will be archived in the Digital Repository of Ireland under a Creative Commons CC BY 4.0 Attribution licence. They will be made available to the public.</p>
+
+<p>If you enter your name you will be listed as the creator of the digital object.</p>
+
+<label>
+  Your name:
+  <input type="text" id="username" placeholder="Enter your name">
+</label>
+
+<label>
+  Your Country of Origin:
+  <input type="text" id="country" placeholder="What country are you from?">
+</label>
+
+<label>
+  Your Irish Speaking Level:
+  <input type="text" id="irish" placeholder="Do you speak Irish?">
+</label>
+
+<h2>Scaoil le camera, uimhir, gluaiseacht!</h2>
+<p>This is a phrase from the Gael Linn Amharc Éireann film "Sidney Street Siege Filming in Dublin / Sidney Street Siege á Scannánú i mBaile Átha Cliath". A literal translation would be "start the cameras, number, movement", but in context it correspondes to the English phrase <b>"Lights, Camera, Action!"</b>.</p>
+
+<button onclick="startRecording('audio')">Start Recording</button>
+<button onclick="stopRecording()">Stop</button>
+
+<p id="status"></p>
+
+<div id="preview"></div>
+
+<div id="controls" style="display:none; margin-top:10px;">
+  <button id="uploadBtn" onclick="uploadRecording()" disabled>Upload</button>
+  <button onclick="reRecord()">Re-record</button>
+</div>
+
+
+:: Amharc Éireann 04 {"position":"675,1675","size":"100,100"}
+(set: $currentPassage to "cailindeas")
+<h1>Cailín deas</h1>
+
+<audio id="audioClip" preload="auto" controls>
+<source src="https://digital-repository-of-ireland.github.io/SpeakLikeMe/assets/04_spring-fashions_cailindeas.mp3">
+</audio>
+
+<p>If you wish to contribute your recording to the DRI's Speak Like Me Collection please use the "Upload" button below. Contributions will be archived in the Digital Repository of Ireland under a Creative Commons CC BY 4.0 Attribution licence. They will be made available to the public.</p>
+
+<p>If you enter your name you will be listed as the creator of the digital object.</p>
+
+<label>
+  Your name:
+  <input type="text" id="username" placeholder="Enter your name">
+</label>
+
+<label>
+  Your Country of Origin:
+  <input type="text" id="country" placeholder="What country are you from?">
+</label>
+
+<label>
+  Your Irish Speaking Level:
+  <input type="text" id="irish" placeholder="Do you speak Irish?">
+</label>
+
+<h2>Scaoil le camera, uimhir, gluaiseacht!</h2>
+<p>This is a phrase from the Gael Linn Amharc Éireann film "Sidney Street Siege Filming in Dublin / Sidney Street Siege á Scannánú i mBaile Átha Cliath". A literal translation would be "start the cameras, number, movement", but in context is used for the English phrase <b>"Lights, Camera, Action!"</b>.</p>
+
+<button onclick="startRecording('audio')">Start Recording</button>
+<button onclick="stopRecording()">Stop</button>
+
+<p id="status"></p>
+
+<div id="preview"></div>
+
+<div id="controls" style="display:none; margin-top:10px;">
+  <button id="uploadBtn" onclick="uploadRecording()" disabled>Upload</button>
+  <button onclick="reRecord()">Re-record</button>
+</div>
+
+
+:: Amharc Éireann 05 [regular amharceireann] {"position":"800,1550","size":"100,100"}
+(set: $currentPassage to "whatsgoingon")
+<h1>What's going on here?</h1>
+
+<audio id="audioClip" preload="auto" controls>
+<source src="https://digital-repository-of-ireland.github.io/SpeakLikeMe/assets/05_spring-fashions_ceardataarsiul.mp3">
+</audio>
+
+<p>If you wish to contribute your recording to the DRI's Speak Like Me Collection please use the "Upload" button below. Contributions will be archived in the Digital Repository of Ireland under a Creative Commons CC BY 4.0 Attribution licence. They will be made available to the public.</p>
+
+<p>If you enter your name you will be listed as the creator of the digital object.</p>
+
+<label>
+  Your name:
+  <input type="text" id="username" placeholder="Enter your name">
+</label>
+
+<label>
+  Your Country of Origin:
+  <input type="text" id="country" placeholder="What country are you from?">
+</label>
+
+<label>
+  Your Irish Speaking Level:
+  <input type="text" id="irish" placeholder="Do you speak Irish?">
+</label>
+
+<h2>Céard atá ar siúl anseo?</h2>
+<p>This is a phrase from the Gael Linn Amharc Éireann film "Spring Fashions Here Already / Faisin Earraigh Anseo Cheana Féin". It means <b>"What's going on here?"</b>.</p>
+
+<button onclick="startRecording('audio')">Start Recording</button>
+<button onclick="stopRecording()">Stop</button>
+
+<p id="status"></p>
+
+<div id="preview"></div>
+
+<div id="controls" style="display:none; margin-top:10px;">
+  <button id="uploadBtn" onclick="uploadRecording()" disabled>Upload</button>
+  <button onclick="reRecord()">Re-record</button>
+</div>
+
+
+:: Amharc Éireann 06 [regular amharceireann] {"position":"937.5,1550","size":"100,100"}
+(set: $currentPassage to "sineanoise")
+<h1>Lights, camera, action!</h1>
+
+<audio id="audioClip" preload="auto" controls>
+<source src="https://digital-repository-of-ireland.github.io/SpeakLikeMe/assets/06_spring-fashions_osineanoise.mp3">
+</audio>
+
+<p>If you wish to contribute your recording to the DRI's Speak Like Me Collection please use the "Upload" button below. Contributions will be archived in the Digital Repository of Ireland under a Creative Commons CC BY 4.0 Attribution licence. They will be made available to the public.</p>
+
+<p>If you enter your name you will be listed as the creator of the digital object.</p>
+
+<label>
+  Your name:
+  <input type="text" id="username" placeholder="Enter your name">
+</label>
+
+<label>
+  Your Country of Origin:
+  <input type="text" id="country" placeholder="What country are you from?">
+</label>
+
+<label>
+  Your Irish Speaking Level:
+  <input type="text" id="irish" placeholder="Do you speak Irish?">
+</label>
+
+<h2>Ó, sin é anois é!</h2>
+<p>This is a phrase from the Gael Linn Amharc Éireann film "Spring Fashions Here Already / Faisin Earraigh Anseo Cheana Féin". A literal translation would be "Ah, that's it now", but it is a useful phrase that express the same sentiment as English phrases such as <b>"Here we go!"</b>, <b>"There you have it!"</b>, or <b>"Exactly!"</b>".</p>
+
+<button onclick="startRecording('audio')">Start Recording</button>
+<button onclick="stopRecording()">Stop</button>
+
+<p id="status"></p>
+
+<div id="preview"></div>
+
+<div id="controls" style="display:none; margin-top:10px;">
+  <button id="uploadBtn" onclick="uploadRecording()" disabled>Upload</button>
+  <button onclick="reRecord()">Re-record</button>
+</div>
+
+
+:: Amharc Éireann 07 {"position":"1075,1675","size":"100,100"}
+(set: $currentPassage to "whatsgoingon")
+<h1>What's going on here?</h1>
+
+<audio id="audioClip" preload="auto" controls>
+<source src="https://digital-repository-of-ireland.github.io/SpeakLikeMe/assets/05_spring-fashions_ceardataarsiul.mp3">
+</audio>
+
+<p>If you wish to contribute your recording to the DRI's Speak Like Me Collection please use the "Upload" button below. Contributions will be archived in the Digital Repository of Ireland under a Creative Commons CC BY 4.0 Attribution licence. They will be made available to the public.</p>
+
+<p>If you enter your name you will be listed as the creator of the digital object.</p>
+
+<label>
+  Your name:
+  <input type="text" id="username" placeholder="Enter your name">
+</label>
+
+<label>
+  Your Country of Origin:
+  <input type="text" id="country" placeholder="What country are you from?">
+</label>
+
+<label>
+  Your Irish Speaking Level:
+  <input type="text" id="irish" placeholder="Do you speak Irish?">
+</label>
+
+<h2>Céard atá ar siúl anseo?</h2>
+<p>This is a phrase from the Gael Linn Amharc Éireann film "Spring Fashions Here Already / Faisin Earraigh Anseo Cheana Féin". It means <b>"What's going on here?"</b>.</p>
+
+<button onclick="startRecording('audio')">Start Recording</button>
+<button onclick="stopRecording()">Stop</button>
+
+<p id="status"></p>
+
+<div id="preview"></div>
+
+<div id="controls" style="display:none; margin-top:10px;">
+  <button id="uploadBtn" onclick="uploadRecording()" disabled>Upload</button>
+  <button onclick="reRecord()">Re-record</button>
+</div>
+
+
+:: Amharc Éireann 08 [regular amharceireann] {"position":"1187.5,1550","size":"100,100"}
+(set: $currentPassage to "sauce")
+<h1>Hunger is good sauce</h1>
+
+<audio id="audioClip" preload="auto" controls>
+<source src="https://digital-repository-of-ireland.github.io/SpeakLikeMe/assets/08_visit-to-killarney_ocras.mp3">
+</audio>
+
+<p>If you wish to contribute your recording to the DRI's Speak Like Me Collection please use the "Upload" button below. Contributions will be archived in the Digital Repository of Ireland under a Creative Commons CC BY 4.0 Attribution licence. They will be made available to the public.</p>
+
+<p>If you enter your name you will be listed as the creator of the digital object.</p>
+
+<label>
+  Your name:
+  <input type="text" id="username" placeholder="Enter your name">
+</label>
+
+<label>
+  Your Country of Origin:
+  <input type="text" id="country" placeholder="What country are you from?">
+</label>
+
+<label>
+  Your Irish Speaking Level:
+  <input type="text" id="irish" placeholder="Do you speak Irish?">
+</label>
+
+<h2>Is maith an t-anlann an t-ocras</h2>
+<p>This is a phrase from the Gael Linn Amharc Éireann film "Visit to Killarney / Cuairt ar Chill Airne". It means <b>"Hunger is good sauce"</b>.</p>
+
+<button onclick="startRecording('audio')">Start Recording</button>
+<button onclick="stopRecording()">Stop</button>
+
+<p id="status"></p>
+
+<div id="preview"></div>
+
+<div id="controls" style="display:none; margin-top:10px;">
+  <button id="uploadBtn" onclick="uploadRecording()" disabled>Upload</button>
+  <button onclick="reRecord()">Re-record</button>
+</div>
+
+
+:: Amharc Éireann 09 {"position":"1325,1675","size":"100,100"}
+(set: $currentPassage to "fainne")
+<h1>Fáinne Geal an Lae</h1>
+
+<audio id="audioClip" preload="auto" controls>
+<source src="https://digital-repository-of-ireland.github.io/SpeakLikeMe/assets/08_visit-to-killarney_ocras.mp3">
+</audio>
+
+<p>If you wish to contribute your recording to the DRI's Speak Like Me Collection please use the "Upload" button below. Contributions will be archived in the Digital Repository of Ireland under a Creative Commons CC BY 4.0 Attribution licence. They will be made available to the public.</p>
+
+<p>If you enter your name you will be listed as the creator of the digital object.</p>
+
+<label>
+  Your name:
+  <input type="text" id="username" placeholder="Enter your name">
+</label>
+
+<label>
+  Your Country of Origin:
+  <input type="text" id="country" placeholder="What country are you from?">
+</label>
+
+<label>
+  Your Irish Speaking Level:
+  <input type="text" id="irish" placeholder="Do you speak Irish?">
+</label>
+
+<h2>Is maith an t-anlann an t-ocras</h2>
+<p>This is a phrase from the Gael Linn Amharc Éireann film "Visit to Killarney / Cuairt ar Chill Airne". It means <b>"Hunger is good sauce"</b>.</p>
+
+<button onclick="startRecording('audio')">Start Recording</button>
+<button onclick="stopRecording()">Stop</button>
+
+<p id="status"></p>
+
+<div id="preview"></div>
+
+<div id="controls" style="display:none; margin-top:10px;">
+  <button id="uploadBtn" onclick="uploadRecording()" disabled>Upload</button>
+  <button onclick="reRecord()">Re-record</button>
+</div>
+
+
+:: Amharc Éireann 10 [regular amharceireann] {"position":"1325,1550","size":"100,100"}
+(set: $currentPassage to "roscommon")
+<h1>Roscommon</h1>
+
+<audio id="audioClip" preload="auto" controls>
+<source src="https://digital-repository-of-ireland.github.io/SpeakLikeMe/assets/10_kerry-girl_roscommon.mp3">
+</audio>
+
+<p>If you wish to contribute your recording to the DRI's Speak Like Me Collection please use the "Upload" button below. Contributions will be archived in the Digital Repository of Ireland under a Creative Commons CC BY 4.0 Attribution licence. They will be made available to the public.</p>
+
+<p>If you enter your name you will be listed as the creator of the digital object.</p>
+
+<label>
+  Your name:
+  <input type="text" id="username" placeholder="Enter your name">
+</label>
+
+<label>
+  Your Country of Origin:
+  <input type="text" id="country" placeholder="What country are you from?">
+</label>
+
+<label>
+  Your Irish Speaking Level:
+  <input type="text" id="irish" placeholder="Do you speak Irish?">
+</label>
+
+<h2>An raibh tú i Roscomáin nó an bhfaca tú fhéin mo ghrá?</h2>
+<p>This is a phrase from the Gael Linn Amharc Éireann film "Kerry Girl Wins National Beauty Contest / Comórtas Áilleachta Náisiúnta buaite ag cailín ó Chiarraí". It means <b>"Were you in Roscommon, or did you see my love?"</b> and is a tongue-in-cheek reference to the song "An Raibh Tú ag an gCarraig?".</p>
+
+<button onclick="startRecording('audio')">Start Recording</button>
+<button onclick="stopRecording()">Stop</button>
+
+<p id="status"></p>
+
+<div id="preview"></div>
+
+<div id="controls" style="display:none; margin-top:10px;">
+  <button id="uploadBtn" onclick="uploadRecording()" disabled>Upload</button>
+  <button onclick="reRecord()">Re-record</button>
+</div>
+
+
+:: Amharc Éireann 11 [regular amharceireann] {"position":"1500,1575","size":"100,100"}
+(set: $currentPassage to "oranges")
+<h1>Eat oranges!</h1>
+
+<audio id="audioClip" preload="auto" controls>
+<source src="https://digital-repository-of-ireland.github.io/SpeakLikeMe/assets/11_mansion-house_oraisti.mp3">
+</audio>
+
+<p>If you wish to contribute your recording to the DRI's Speak Like Me Collection please use the "Upload" button below. Contributions will be archived in the Digital Repository of Ireland under a Creative Commons CC BY 4.0 Attribution licence. They will be made available to the public.</p>
+
+<p>If you enter your name you will be listed as the creator of the digital object.</p>
+
+<label>
+  Your name:
+  <input type="text" id="username" placeholder="Enter your name">
+</label>
+
+<label>
+  Your Country of Origin:
+  <input type="text" id="country" placeholder="What country are you from?">
+</label>
+
+<label>
+  Your Irish Speaking Level:
+  <input type="text" id="irish" placeholder="Do you speak Irish?">
+</label>
+
+<h2>Agus má thaistíonn uait a bheith mór do shláinte, ith oráistí!</h2>
+<p>This is a phrase from the Gael Linn Amharc Éireann film "Mansion House: Ideal Homes Exhibition / Teach an Ard-Mhéara: Taispeántas Tithe Idéalacha". It means <b>"If you want to be on top of your health, eat oranges!"</b> .</p>
+
+<button onclick="startRecording('audio')">Start Recording</button>
+<button onclick="stopRecording()">Stop</button>
+
+<p id="status"></p>
+
+<div id="preview"></div>
+
+<div id="controls" style="display:none; margin-top:10px;">
+  <button id="uploadBtn" onclick="uploadRecording()" disabled>Upload</button>
+  <button onclick="reRecord()">Re-record</button>
+</div>
+
+
+:: Amharc Éireann clips for Culture Night 2026 [regular amharceireann] {"position":"450,1275","size":"100,100"}
+<h1>Clips from the IFI Amharc Éireann collection</h1>
+
+<p>On the following pages you will hear clips from the Gael Linn Amharc Éireann: A View of Ireland collection, held by the Irish Film Institute. This collection of short single-story films was produced by Gael Linn from 1956 to mid-1957. They were distributed to cinemas throughout the country on a monthly basis and featured a wide range of contemporary topics, including economic development, festivals, high-profile events, fleadhanna cheoil, sporting events, and local beauty pageants. They offer a fascinating, and often humorous, look back into the lives of Irish people in the 50s, and are a great source of Irish language content.</p>
+
+<p>We have selected a few fun phrases from the films and you are invited to copy them and record them in your own voice.</p>
+
+[[A Christmas Greeting|Amharc Éireann 01]]
+[[Drinking, Music, and Dancing|Amharc Éireann 02]]
+[[Lights, Camera, Action!|Amharc Éireann 03]]
+[[What's going on here?|Amharc Éireann 05]]
+[[That's it!|Amharc Éireann 06]]
+[[Hunger is good sauce|Amharc Éireann 08]]
+[[Roscommon|Amharc Éireann 10]]
+[[Eat oranges!|Amharc Éireann 11]]
+
+''Source:''
+<p>Irish Film Institute. Amharc Éireann: A View of Ireland. Gael Linn. (1956-1957). Sound &#91;Type&#93;. <a href="https://ifiarchiveplayer.ie/gael-linn/" target="_blank">https://ifiarchiveplayer.ie/gael-linn/</a></p>
+
+<p>The background image on each of these pages is a screenshot taken from the Irish Film Institute's Archive Player <a href="https://ifiarchiveplayer.ie/gael-linn/" target="_blank">https://ifiarchiveplayer.ie/gael-linn/</a></p></p>
 
 
 
@@ -370,7 +867,7 @@ DRI Speak Like Me
 <h1>Community Archive - Cartlann Phobail</h1>
 
 <audio id="audioClip" preload="auto" controls>
-<source src="https://repository.dri.ie/objects/3t94kz238/files/4168nq910/download?type=surrogate">
+<source src="http://repository.dri.ie/objects/3t94kz238/files/4168nq910/download?type=surrogate">
 </audio>
 
 <p>If you wish to contribute your recording to the DRI's Speak Like Me Collection please use the "Upload" button below. Contributions will be archived in the Digital Repository of Ireland under a Creative Commons CC BY 4.0 Attribution licence. They will be made available to the public.</p>
@@ -968,7 +1465,7 @@ Video not playing? Try a browser that supports the HTML5 video tag!
 <p>Digital Repository of Ireland &#91;Depositor&#93.  ceadúnas (fir1) athúsáide.reuse licence (s). Niamh Ní Charra, archivist, University of Galway, Digital Repository of Ireland. (2025-05-25). Sound &#91;Type&#93. Digital Repository of Ireland (2026) &#91;Publisher&#93. <a href="https://doi.org/10.7486/DRI.dv14d167f" target="_blank">https://doi.org/10.7486/DRI.dv14d167f</a></p>
 
 
-:: START [start regular] {"position":"875,500","size":"100,100"}
+:: START [start regular] {"position":"925,475","size":"100,100"}
 <p>Choose an option<p>
 
 [[Days of the week in Irish]]  [(text-colour:black)+(bg:orange)[  <b>Easy!  ★☆☆</b>  ]]
@@ -982,6 +1479,8 @@ Video not playing? Try a browser that supports the HTML5 video tag!
 [[A sample conversation]]  [(text-colour:black)+(bg:orange)[  <b>Medium!  ★★☆</b>  ]]
 
 [[The Lord's Prayer (Our Father) in Irish]]  [(text-colour:black)+(bg:orange)[  <b>Difficult!  ★★★</b>  ]]
+
+[(text-colour:black)+(bg:orange)[  <b>New!  ★★★</b>  ]] [[Amharc Éireann clips for Culture Night 2026]]
 
 <p>The background image on this page is University of Limerick &#91;Depositor&#93;. L1127, Murroe, Liscreagh. University of Limerick, Locating Bench Marks, Preserving Heritage, Ordnance Survey. (1830s-1990s). Image &#91;Type&#93;. Digital Repository of Ireland (2026) &#91;Publisher&#93;. <a href="https://doi.org/10.7486/DRI.1v540035x" target="_blank">https://doi.org/10.7486/DRI.1v540035x</a></p>
 
@@ -1872,6 +2371,18 @@ tw-passage[tags~="teármaíocht"] {
   position: relative;
   min-height: 100vh;            /* ensures passage takes full viewport height */
   background-image: url("https://repository.dri.ie/objects/x346t635v/files/x920w0032/download?type=surrogate");
+  background-size: 100% auto;    /* stretch width to full viewport, keep aspect ratio */
+  background-position: top center; /* align top of image */
+  background-repeat: no-repeat;   /* don’t tile */
+  background-color: white;        /* fills any extra space below the image */
+  padding: 1.5em;                     /* internal text padding */
+  border-radius: 10px;                /* slightly rounded corners */
+}
+/* Amharc Éireann clips for Culture Night */
+tw-passage[tags~="amharceireann"] {
+  position: relative;
+  min-height: 100vh;            /* ensures passage takes full viewport height */
+  background-image: url("https://digital-repository-of-ireland.github.io/SpeakLikeMe/assets/IFI_Amharc_Eireann.png");
   background-size: 100% auto;    /* stretch width to full viewport, keep aspect ratio */
   background-position: top center; /* align top of image */
   background-repeat: no-repeat;   /* don’t tile */
